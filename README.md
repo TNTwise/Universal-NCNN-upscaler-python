@@ -1,6 +1,10 @@
-# realesrgan-ncnn-py
-
-Python Binding for realesrgan-ncnn-py with PyBind11
+# span-ncnn-py
+### Custom models:
+- <a href="https://openmodeldb.info/models/4x-ClearRealityV1">ClearRealityV1 (4X)</a> by Kim2091
+- <a href="https://github.com/terrainer/AI-Upscaling-Models/tree/main/4xSPANkendata">SPANkendata (4X)</a> by terrainer
+- <a href="https://openmodeldb.info/models/2x-span-anime-pretrain">2x-span-anime-pretrain (2X)</a> by Kim2091
+- <a href="https://github.com/Phhofm/models"> 2xHFA2kSpan (2x)</a> by Phhofm
+Python Binding for span-ncnn-py with PyBind11
 
 [![PyPI version](https://badge.fury.io/py/realesrgan-ncnn-py.svg?123456)](https://badge.fury.io/py/realesrgan-ncnn-py?123456)
 [![test_pip](https://github.com/Final2x/realesrgan-ncnn-py/actions/workflows/test_pip.yml/badge.svg)](https://github.com/Final2x/realesrgan-ncnn-py/actions/workflows/test_pip.yml)
@@ -18,7 +22,7 @@ This wrapper provides an easy-to-use interface for running the pre-trained Real-
 | :-----------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------: | :----------------: | :---------: | :----------------: |
 | Linux (Clang) |         [![CI-Linux-x64-Clang](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Linux-x64-Clang.yml/badge.svg)](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Linux-x64-Clang.yml)         |      —      | :white_check_mark: |      —      | :white_check_mark: |
 |  Linux (GCC)  |            [![CI-Linux-x64-GCC](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Linux-x64-GCC.yml/badge.svg)](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Linux-x64-GCC.yml)            |      —      | :white_check_mark: |      —      | :white_check_mark: |
-|    Windows    |       [![CI-Windows-x64-MSVC](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Windows-x64-MSVC.yml/badge.svg)](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Windows-x64-MSVC.yml)        |      —      | :white_check_mark: |      —      | :white_check_mark: |
+|    Windows    |       [![CI-Windows-x64-MSVC](https://github.com/Tohrusky/span-ncnn-py/actions/workflows/CI-Windows-x64-MSVC.yml/badge.svg)](https://github.com/Tohrusky/span-ncnn-py/actions/workflows/CI-Windows-x64-MSVC.yml)        |      —      | :white_check_mark: |      —      | :white_check_mark: |
 |     MacOS     | [![CI-MacOS-Universal-Clang](https://github.com/Tohrusky/realcugan-ncnn-py/actions/workflows/CI-MacOS-Universal-Clang.yml/badge.svg)](https://github.com/Tohrusky/realcugan-ncnn-py/actions/workflows/CI-MacOS-Universal-Clang.yml) |      —      | :white_check_mark: |      —      | :white_check_mark: |
 |  MacOS (ARM)  | [![CI-MacOS-Universal-Clang](https://github.com/Tohrusky/realcugan-ncnn-py/actions/workflows/CI-MacOS-Universal-Clang.yml/badge.svg)](https://github.com/Tohrusky/realcugan-ncnn-py/actions/workflows/CI-MacOS-Universal-Clang.yml) |      —      | :white_check_mark: |      —      | :white_check_mark: |
 
@@ -29,7 +33,7 @@ This wrapper provides an easy-to-use interface for running the pre-trained Real-
 To use this package, simply install it via pip:
 
 ```sh
-pip install realesrgan-ncnn-py
+pip install span-ncnn-py
 ```
 
 For Linux user:
@@ -38,10 +42,10 @@ For Linux user:
 apt install -y libomp5 libvulkan-dev
 ```
 
-Then, import the Realesrgan class from the package:
+Then, import the span class from the package:
 
 ```python
-from realesrgan_ncnn_py import Realesrgan
+from span_ncnn_py import span
 ```
 
 To initialize the model:
@@ -68,9 +72,9 @@ Once the model is initialized, you can use the upscale method to super-resolve y
 ```python
 from PIL import Image
 
-realesrgan = Realesrgan(gpuid=0)
+span = span(gpuid=0)
 with Image.open("input.jpg") as image:
-    image = realesrgan.process_pil(image)
+    image = span.process_pil(image)
     image.save("output.jpg", quality=95)
 ```
 
@@ -79,9 +83,9 @@ with Image.open("input.jpg") as image:
 ```python
 import cv2
 
-realesrgan = Realesrgan(gpuid=0)
+span = span(gpuid=0)
 image = cv2.imdecode(np.fromfile("input.jpg", dtype=np.uint8), cv2.IMREAD_COLOR)
-image = realesrgan.process_cv2(image)
+image = span.process_cv2(image)
 cv2.imencode(".jpg", image)[1].tofile("output_cv2.jpg")
 ```
 
