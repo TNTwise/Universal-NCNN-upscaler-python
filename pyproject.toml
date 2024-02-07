@@ -19,14 +19,14 @@ dependencies = [
   "pillow"
 ]
 license = {text = "BSD-3-Clause"}
-name = "realesrgan-ncnn-py"
+name = "span-ncnn-py"
 readme = "README.md"
 requires-python = ">=3.8"
-version = "2.0.0"
+version = "1.0.0"
 
 [project.urls]
-Homepage = "https://github.com/Final2x/realesrgan-ncnn-py"
-Repository = "https://github.com/Final2x/realesrgan-ncnn-py"
+Homepage = "https://github.com/NevermindNilas/span-ncnn-python-attempt"
+Repository = "https://github.com/NevermindNilas/span-ncnn-python-attempt"
 
 [tool.coverage.run]
 omit = ["src/realesrgan_ncnn_py"]

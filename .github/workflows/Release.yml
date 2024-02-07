@@ -20,7 +20,7 @@ jobs:
   macos:
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
 
     runs-on: macos-latest
     steps:
@@ -88,13 +88,7 @@ jobs:
               -DVulkan_LIBRARY=`pwd`/../vulkansdk-macos-1.2.162.1/MoltenVK/MoltenVK.xcframework/macos-arm64_x86_64/libMoltenVK.a \
               ..
           cmake --build . -j 4
-
-      - name: build python 3.8 wheel
-        if: matrix.python-version == '3.8'
-        run: |
-          lipo -create src/build-arm64/realesrgan_ncnn_vulkan_wrapper.cpython-38-darwin.so src/build-x86_64/realesrgan_ncnn_vulkan_wrapper.cpython-38-darwin.so -o src/realesrgan_ncnn_py/realesrgan_ncnn_vulkan_wrapper.cpython-38-darwin.so
-          pdm build --no-sdist --config-setting="--python-tag=cp38" --config-setting="--plat-name=macosx_10_15_x86_64"
-
+          
       - name: build python 3.9 wheel
         if: matrix.python-version == '3.9'
         run: |
@@ -127,7 +121,7 @@ jobs:
   windows:
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
 
     runs-on: windows-latest
     steps:
@@ -177,10 +171,6 @@ jobs:
         run: |
           echo F | xcopy .\src\build\Release\realesrgan_ncnn_vulkan_wrapper.*.pyd .\src\realesrgan_ncnn_py
 
-      - name: build python 3.8 wheel
-        if: matrix.python-version == '3.8'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp38" --config-setting="--plat-name=win_amd64"
-
       - name: build python 3.9 wheel
         if: matrix.python-version == '3.9'
         run: pdm build --no-sdist --config-setting="--python-tag=cp39" --config-setting="--plat-name=win_amd64"
@@ -205,7 +195,7 @@ jobs:
   linux:
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
 
     runs-on: ubuntu-20.04
     steps:
@@ -257,10 +247,6 @@ jobs:
       - name: pre build wheel
         run: |
           cp src/build/realesrgan_ncnn_vulkan_wrapper.*.so src/realesrgan_ncnn_py
-
-      - name: build python 3.8 wheel
-        if: matrix.python-version == '3.8'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp38" --config-setting="--plat-name=manylinux1_x86_64"
 
       - name: build python 3.9 wheel
         if: matrix.python-version == '3.9'

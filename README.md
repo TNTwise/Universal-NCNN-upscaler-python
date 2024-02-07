@@ -47,15 +47,15 @@ from realesrgan_ncnn_py import Realesrgan
 To initialize the model:
 
 ```python
-realesrgan = Realesrgan(gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0)
-# model can be -1, 0, 1, 2, 3, 4; 0 for default, -1 for custom load
-# 0: {"param": "realesr-animevideov3-x2.param", "bin": "realesr-animevideov3-x2.bin", "scale": 2},
-# 1: {"param": "realesr-animevideov3-x3.param", "bin": "realesr-animevideov3-x3.bin", "scale": 3},
-# 2: {"param": "realesr-animevideov3-x4.param", "bin": "realesr-animevideov3-x4.bin", "scale": 4},
-# 3: {"param": "realesrgan-x4plus-anime.param", "bin": "realesrgan-x4plus-anime.bin", "scale": 4},
-# 4: {"param": "realesrgan-x4plus.param", "bin": "realesrgan-x4plus.bin", "scale": 4}
-
-
+span = Span(gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0)
+# model can be 0, 1, 2, 3, 4, 5, 6; 0 for default
+# 0: {"param": "spanx2_ch48.param", "bin": "spanx2_ch48.bin", "scale": 2},
+# 1: {"param": "spanx2_ch52.param", "bin": "spanx2_ch52.bin", "scale": 2},
+# 2: {"param": "spanx4_ch48.param", "bin": "spanx4_ch48.bin", "scale": 4},
+# 3: {"param": "spanx4_ch52.param", "bin": "spanx4_ch52.bin", "scale": 4},
+# 4: {"param": "2xHFA2kSPAN_27k.param", "bin": "2xHFA2kSPAN_27k.bin", "scale": 2},
+# 5: {"param": "4xSPANkendata.param", "bin": "4xSPANkendata.bin", "scale": 4},
+# 6: {"param": "ClearReality4x.param", "bin": "ClearReality4x.bin", "scale": 4}
 ```
 
 Here, gpuid specifies the GPU device to use, tta_mode enables test-time augmentation, tilesize specifies the tile size

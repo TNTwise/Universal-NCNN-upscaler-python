@@ -36,7 +36,7 @@ except ImportError:
     import realesrgan_ncnn_vulkan_wrapper as wrapped
 
 
-class Realesrgan:
+class Span:
     def __init__(self, gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0):
         """
         RealESRGAN class for Super Resolution
@@ -91,6 +91,9 @@ class Realesrgan:
             1: {"param": "spanx2_ch52.param", "bin": "spanx2_ch52.bin", "scale": 2},
             2: {"param": "spanx4_ch48.param", "bin": "spanx4_ch48.bin", "scale": 4},
             3: {"param": "spanx4_ch52.param", "bin": "spanx4_ch52.bin", "scale": 4},
+            4: {"param": "2xHFA2kSPAN_27k.param", "bin": "2xHFA2kSPAN_27k.bin", "scale": 2},
+            5: {"param": "4xSPANkendata.param", "bin": "4xSPANkendata.bin", "scale": 4},
+            6: {"param": "ClearReality4x.param", "bin": "ClearReality4x.bin", "scale": 4},
         }
 
         if self._model == -1:
