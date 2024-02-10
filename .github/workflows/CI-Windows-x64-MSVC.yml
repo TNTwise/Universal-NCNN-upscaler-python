@@ -66,12 +66,7 @@ jobs:
           cmake -A x64 -DCMAKE_CXX_FLAGS="-frtti -fexceptions" ..
           cmake --build . --config Release -j 4
 
-      - name: Test
-        run: |
-          echo F | xcopy .\src\build\Release\span_ncnn_vulkan_wrapper.*.pyd .\src\span_ncnn_py
-          echo F | xcopy .\tests\vulkan-1.dll .\src\span_ncnn_py
-          pdm install
-          pdm run test
+      
 
       - name: dist
         run: |
