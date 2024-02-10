@@ -1,4 +1,4 @@
-project(Real-ESRGAN-ncnn-vulkan-python)
+project(Spann-ncnn-vulkan-python)
 
 cmake_minimum_required(VERSION 3.9)
 cmake_policy(SET CMP0078 NEW)
@@ -22,8 +22,8 @@ find_package(Vulkan REQUIRED)
 find_program(GLSLANGVALIDATOR_EXECUTABLE NAMES glslangValidator PATHS $ENV{VULKAN_SDK}/bin NO_CMAKE_FIND_ROOT_PATH)
 message(STATUS "Found glslangValidator: ${GLSLANGVALIDATOR_EXECUTABLE}")
 
-macro(realesrgan_add_shader SHADER_SRC)
-    set(SHADER_SRC_FULLPATH ${CMAKE_CURRENT_SOURCE_DIR}/Real-ESRGAN-ncnn-vulkan/src/${SHADER_SRC})
+macro(spann_add_shader SHADER_SRC)
+    set(SHADER_SRC_FULLPATH ${CMAKE_CURRENT_SOURCE_DIR}/Spann-ncnn-vulkan/src/${SHADER_SRC})
 
     get_filename_component(SHADER_SRC_NAME_WE ${CMAKE_CURRENT_SOURCE_DIR}/realsr-ncnn-vulkan/src/${SHADER_SRC} NAME_WE)
     set(SHADER_SPV_HEX_FILE ${CMAKE_CURRENT_BINARY_DIR}/${SHADER_SRC_NAME_WE}.spv.hex.h)
@@ -70,7 +70,7 @@ macro(realesrgan_add_shader SHADER_SRC)
 endmacro()
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Real-ESRGAN-ncnn-vulkan/src)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Spann-ncnn-vulkan/src)
 include_directories(.)
 
 if(OPENMP_FOUND)
@@ -238,22 +238,22 @@ endif()
 
 set(SHADER_SPV_HEX_FILES)
 
-realesrgan_add_shader(realesrgan_preproc.comp)
-realesrgan_add_shader(realesrgan_postproc.comp)
-realesrgan_add_shader(realesrgan_preproc_tta.comp)
-realesrgan_add_shader(realesrgan_postproc_tta.comp)
+span_add_shader(span_preproc.comp)
+span_add_shader(span_postproc.comp)
+span_add_shader(span_preproc_tta.comp)
+span_add_shader(span_postproc_tta.comp)
 
 add_custom_target(generate-spirv DEPENDS ${SHADER_SPV_HEX_FILES})
 
 add_subdirectory(pybind11)
 
-pybind11_add_module(realesrgan_ncnn_vulkan_wrapper  realesrgan_wrapped.cpp realesrgan_wrapped.h Real-ESRGAN-ncnn-vulkan/src/realesrgan.h Real-ESRGAN-ncnn-vulkan/src/realesrgan.cpp)
+pybind11_add_module(span_ncnn_vulkan_wrapper  span_wrapped.cpp span_wrapped.h Real-ESRGAN-ncnn-vulkan/src/span.h Real-ESRGAN-ncnn-vulkan/src/span.cpp)
 
-add_dependencies(realesrgan_ncnn_vulkan_wrapper generate-spirv)
+add_dependencies(span_ncnn_vulkan_wrapper generate-spirv)
 
-set_property(TARGET realesrgan_ncnn_vulkan_wrapper PROPERTY CXX_STANDARD 11)
+set_property(TARGET span_ncnn_vulkan_wrapper PROPERTY CXX_STANDARD 11)
 
-set(REALESRGAN_LINK_LIBRARIES ncnn ${Vulkan_LIBRARY})
+set(SPAN_LINK_LIBRARIES ncnn ${Vulkan_LIBRARY})
 
 if(USE_STATIC_MOLTENVK)
   find_library(CoreFoundation NAMES CoreFoundation)
@@ -267,7 +267,7 @@ if(USE_STATIC_MOLTENVK)
 
   list(
     APPEND
-    REALESRGAN_LINK_LIBRARIES
+    SPAN_LINK_LIBRARIES
     ${Metal}
     ${QuartzCore}
     ${CoreGraphics}
@@ -279,7 +279,7 @@ if(USE_STATIC_MOLTENVK)
 endif()
 
 if(OPENMP_FOUND)
-  list(APPEND REALESRGAN_LINK_LIBRARIES ${OpenMP_CXX_LIBRARIES})
+  list(APPEND SPAN_LINK_LIBRARIES ${OpenMP_CXX_LIBRARIES})
 endif()
 
-target_link_libraries(realesrgan_ncnn_vulkan_wrapper PRIVATE ${REALESRGAN_LINK_LIBRARIES})
+target_link_libraries(span_ncnn_vulkan_wrapper PRIVATE ${SPAN_LINK_LIBRARIES})

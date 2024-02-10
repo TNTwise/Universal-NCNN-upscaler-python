@@ -1,7 +1,7 @@
-// realesrgan implemented with ncnn library
+// span implemented with ncnn library
 
-#ifndef REALESRGAN_H
-#define REALESRGAN_H
+#ifndef SPAN_H
+#define SPAN_H
 
 #include <string>
 
@@ -10,11 +10,11 @@
 #include "gpu.h"
 #include "layer.h"
 
-class RealESRGAN {
+class Span {
 public:
-    RealESRGAN(int gpuid, bool tta_mode = false);
+    Span(int gpuid, bool tta_mode = false);
 
-    ~RealESRGAN();
+    ~Span();
 
 #if _WIN32
     int load(const std::wstring& parampath, const std::wstring& modelpath);
@@ -29,7 +29,7 @@ public:
     int process_cpu(const ncnn::Mat &inimage, ncnn::Mat &outimage) const;
 
 public:
-    // realesrgan parameters
+    // span parameters
     int scale;
     int tilesize;
     int prepadding;
@@ -37,12 +37,12 @@ public:
 private:
     ncnn::VulkanDevice *vkdev;
     ncnn::Net net;
-    ncnn::Pipeline *realesrgan_preproc;
-    ncnn::Pipeline *realesrgan_postproc;
+    ncnn::Pipeline *span_preproc;
+    ncnn::Pipeline *span_postproc;
     ncnn::Layer *bicubic_2x;
     ncnn::Layer *bicubic_3x;
     ncnn::Layer *bicubic_4x;
     bool tta_mode;
 };
 
-#endif // REALESRGAN_H
+#endif // SPAN_H

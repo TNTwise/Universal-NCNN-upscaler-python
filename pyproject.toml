@@ -5,6 +5,8 @@ requires = ["pdm-backend"]
 [project]
 authors = [
   {name = "Tohrusky", email = "65994850+Tohrusky@users.noreply.github.com"}
+  {name = "TNTWise", email = ""}
+  {name = "NevermindNilas", email = "nilascontact@gmail.com"}
 ]
 classifiers = [
   "Programming Language :: Python :: 3.8",
@@ -22,14 +24,14 @@ license = {text = "BSD-3-Clause"}
 name = "span-ncnn-py"
 readme = "README.md"
 requires-python = ">=3.8"
-version = "1.0.0"
+version = "1.1.0"
 
 [project.urls]
 Homepage = "https://github.com/NevermindNilas/span-ncnn-python-attempt"
 Repository = "https://github.com/NevermindNilas/span-ncnn-python-attempt"
 
 [tool.coverage.run]
-omit = ["src/realesrgan_ncnn_py"]
+omit = ["src/span_ncnn_py"]
 
 [tool.mypy]
 disable_error_code = "attr-defined"
@@ -52,7 +54,7 @@ test = [
 
 [tool.pdm.scripts.lint]
 composite = [
-  "mypy src/realesrgan_ncnn_py tests",
+  "mypy src/span_ncnn_py tests",
   "ruff check . --fix --exit-non-zero-on-fix",
   "ruff format ."
 ]

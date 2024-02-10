@@ -1,27 +1,27 @@
-#include "realesrgan_wrapped.h"
+#include "span_wrapped.h"
 
 // Image Data Structure
-RealESRGANImage::RealESRGANImage(std::string d, int w, int h, int c) {
+SpanImage::SpanImage(std::string d, int w, int h, int c) {
     this->d = std::move(d);
     this->w = w;
     this->h = h;
     this->c = c;
 }
 
-void RealESRGANImage::set_data(std::string data) {
+void SpanImage::set_data(std::string data) {
     this->d = std::move(data);
 }
 
-pybind11::bytes RealESRGANImage::get_data() const {
+pybind11::bytes SpanImage::get_data() const {
     return pybind11::bytes(this->d);
 }
 
-// RealESRGANWrapped
-RealESRGANWrapped::RealESRGANWrapped(int gpuid, bool tta_mode): RealESRGAN(gpuid, tta_mode) {
+// SpanWrapped
+SpanWrapped::SpanWrapped(int gpuid, bool tta_mode): Span(gpuid, tta_mode) {
     this->gpuid = gpuid;
 }
 
-int RealESRGANWrapped::get_tilesize() const {
+int SpanWrapped::get_tilesize() const {
     int tilesize = 0;
 
     if (this->gpuid < 0) {
@@ -43,49 +43,49 @@ int RealESRGANWrapped::get_tilesize() const {
     return tilesize;
 }
 
-void RealESRGANWrapped::set_parameters(int _tilesize, int _scale) {
-    RealESRGAN::tilesize = _tilesize ? _tilesize : RealESRGANWrapped::get_tilesize();
-    RealESRGAN::scale = _scale;
-    RealESRGAN::prepadding = 10;
+void SpanWrapped::set_parameters(int _tilesize, int _scale) {
+    Span::tilesize = _tilesize ? _tilesize : SpanWrapped::get_tilesize();
+    Span::scale = _scale;
+    Span::prepadding = 10;
 }
 
-int RealESRGANWrapped::load(const std::string &parampath, const std::string &modelpath) {
+int SpanWrapped::load(const std::string &parampath, const std::string &modelpath) {
 #if _WIN32
     // convert string to wstring
     auto to_wide_string = [&](const std::string& input) {
         std::wstring_convert<std::codecvt_utf8<wchar_t>> converter;
         return converter.from_bytes(input);
     };
-    return RealESRGAN::load(to_wide_string(parampath), to_wide_string(modelpath));
+    return Span::load(to_wide_string(parampath), to_wide_string(modelpath));
 #else
-    return RealESRGAN::load(parampath, modelpath);
+    return Span::load(parampath, modelpath);
 #endif
 }
 
-int RealESRGANWrapped::process(const RealESRGANImage &inimage, RealESRGANImage &outimage) const {
+int SpanWrapped::process(const SpanImage &inimage, SpanImage &outimage) const {
     int c = inimage.c;
     ncnn::Mat inimagemat =
             ncnn::Mat(inimage.w, inimage.h, (void *) inimage.d.data(), (size_t) c, c);
     ncnn::Mat outimagemat =
             ncnn::Mat(outimage.w, outimage.h, (void *) outimage.d.data(), (size_t) c, c);
-    return RealESRGAN::process(inimagemat, outimagemat);
+    return Span::process(inimagemat, outimagemat);
 }
 
 int get_gpu_count() { return ncnn::get_gpu_count(); }
 
 void destroy_gpu_instance() { ncnn::destroy_gpu_instance(); }
 
-PYBIND11_MODULE(realesrgan_ncnn_vulkan_wrapper, m) {
-    pybind11::class_<RealESRGANWrapped>(m, "RealESRGANWrapped")
+PYBIND11_MODULE(span_ncnn_vulkan_wrapper, m) {
+    pybind11::class_<SpanWrapped>(m, "SpanWrapped")
             .def(pybind11::init<int, bool>())
-            .def("load", &RealESRGANWrapped::load)
-            .def("process", &RealESRGANWrapped::process)
-            .def("set_parameters", &RealESRGANWrapped::set_parameters);
+            .def("load", &SpanWrapped::load)
+            .def("process", &SpanWrapped::process)
+            .def("set_parameters", &SpanWrapped::set_parameters);
 
-    pybind11::class_<RealESRGANImage>(m, "RealESRGANImage")
+    pybind11::class_<SpanImage>(m, "SpanImage")
             .def(pybind11::init<std::string, int, int, int>())
-            .def("get_data", &RealESRGANImage::get_data)
-            .def("set_data", &RealESRGANImage::set_data);
+            .def("get_data", &SpanImage::get_data)
+            .def("set_data", &SpanImage::set_data);
 
     m.def("get_gpu_count", &get_gpu_count);
 
