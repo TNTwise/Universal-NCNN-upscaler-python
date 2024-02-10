@@ -24,7 +24,7 @@ license = {text = "BSD-3-Clause"}
 name = "span-ncnn-py"
 readme = "README.md"
 requires-python = ">=3.8"
-version = "1.1.0"
+version = "1.2.0"
 
 [project.urls]
 Homepage = "https://github.com/NevermindNilas/span-ncnn-python-attempt"
