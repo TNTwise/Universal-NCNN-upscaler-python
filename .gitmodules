@@ -2,3 +2,6 @@
 	path = src/pybind11
 	url = https://github.com/pybind/pybind11
 
+[submodule "src/span-ncnn-vulkan/src/ncnn"]
+	path = src/span-ncnn-vulkan/src/ncnn
+	url = https://github.com/tencent/ncnn
