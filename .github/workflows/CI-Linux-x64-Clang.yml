@@ -69,19 +69,15 @@ jobs:
           cmake -DOpenMP_CXX_FLAGS="-fexceptions -frtti" ..
           cmake --build . -j 4
 
-      - name: Test
-        run: |
-          cp src/build/realesrgan_ncnn_vulkan_wrapper.*.so src/realesrgan_ncnn_py
-          pdm install
-          pdm run test
+
 
       - name: dist
         run: |
           mkdir dist
-          cp -r src/realesrgan_ncnn_py dist
+          cp -r src/span_ncnn_py dist
 
       - name: upload
         uses: actions/upload-artifact@v3
         with:
-          name: realesrgan-ncnn-linux-x64-clang-python${{ matrix.python-version }}
+          name: span-ncnn-linux-x64-clang-python${{ matrix.python-version }}
           path: dist

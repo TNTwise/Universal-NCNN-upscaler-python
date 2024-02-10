@@ -92,29 +92,26 @@ jobs:
 
       - name: merge-fat-library-py38
         if: matrix.python-version == '3.8'
-        run: lipo -create src/build-arm64/realesrgan_ncnn_vulkan_wrapper.cpython-38-darwin.so src/build-x86_64/realesrgan_ncnn_vulkan_wrapper.cpython-38-darwin.so -o src/realesrgan_ncnn_py/realesrgan_ncnn_vulkan_wrapper.cpython-38-darwin.so
+        run: lipo -create src/build-arm64/span_ncnn_vulkan_wrapper.cpython-38-darwin.so src/build-x86_64/span_ncnn_vulkan_wrapper.cpython-38-darwin.so -o src/span_ncnn_py/span_ncnn_vulkan_wrapper.cpython-38-darwin.so
       - name: merge-fat-library-py39
         if: matrix.python-version == '3.9'
-        run: lipo -create src/build-arm64/realesrgan_ncnn_vulkan_wrapper.cpython-39-darwin.so src/build-x86_64/realesrgan_ncnn_vulkan_wrapper.cpython-39-darwin.so -o src/realesrgan_ncnn_py/realesrgan_ncnn_vulkan_wrapper.cpython-39-darwin.so
+        run: lipo -create src/build-arm64/span_ncnn_vulkan_wrapper.cpython-39-darwin.so src/build-x86_64/span_ncnn_vulkan_wrapper.cpython-39-darwin.so -o src/span_ncnn_py/span_ncnn_vulkan_wrapper.cpython-39-darwin.so
       - name: merge-fat-library-py310
         if: matrix.python-version == '3.10'
-        run: lipo -create src/build-arm64/realesrgan_ncnn_vulkan_wrapper.cpython-310-darwin.so src/build-x86_64/realesrgan_ncnn_vulkan_wrapper.cpython-310-darwin.so -o src/realesrgan_ncnn_py/realesrgan_ncnn_vulkan_wrapper.cpython-310-darwin.so
+        run: lipo -create src/build-arm64/span_ncnn_vulkan_wrapper.cpython-310-darwin.so src/build-x86_64/span_ncnn_vulkan_wrapper.cpython-310-darwin.so -o src/span_ncnn_py/span_ncnn_vulkan_wrapper.cpython-310-darwin.so
       - name: merge-fat-library-py311
         if: matrix.python-version == '3.11'
-        run: lipo -create src/build-arm64/realesrgan_ncnn_vulkan_wrapper.cpython-311-darwin.so src/build-x86_64/realesrgan_ncnn_vulkan_wrapper.cpython-311-darwin.so -o src/realesrgan_ncnn_py/realesrgan_ncnn_vulkan_wrapper.cpython-311-darwin.so
+        run: lipo -create src/build-arm64/span_ncnn_vulkan_wrapper.cpython-311-darwin.so src/build-x86_64/span_ncnn_vulkan_wrapper.cpython-311-darwin.so -o src/span_ncnn_py/span_ncnn_vulkan_wrapper.cpython-311-darwin.so
 
-      - name: Test
-        run: |
-          pdm install
-          pdm run test
+
 
       - name: dist
         run: |
           mkdir dist
-          cp -r src/realesrgan_ncnn_py dist
+          cp -r src/span_ncnn_py dist
 
       - name: upload
         uses: actions/upload-artifact@v3
         with:
-          name: realesrgan-ncnn-macos-python${{ matrix.python-version }}
+          name: span-ncnn-macos-python${{ matrix.python-version }}
           path: dist

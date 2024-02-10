@@ -1,4 +1,4 @@
-project(Spann-ncnn-vulkan-python)
+project(span-ncnn-vulkan-python)
 
 cmake_minimum_required(VERSION 3.9)
 cmake_policy(SET CMP0078 NEW)
@@ -22,8 +22,8 @@ find_package(Vulkan REQUIRED)
 find_program(GLSLANGVALIDATOR_EXECUTABLE NAMES glslangValidator PATHS $ENV{VULKAN_SDK}/bin NO_CMAKE_FIND_ROOT_PATH)
 message(STATUS "Found glslangValidator: ${GLSLANGVALIDATOR_EXECUTABLE}")
 
-macro(spann_add_shader SHADER_SRC)
-    set(SHADER_SRC_FULLPATH ${CMAKE_CURRENT_SOURCE_DIR}/Spann-ncnn-vulkan/src/${SHADER_SRC})
+macro(span_add_shader SHADER_SRC)
+    set(SHADER_SRC_FULLPATH ${CMAKE_CURRENT_SOURCE_DIR}/span-ncnn-vulkan/src/${SHADER_SRC})
 
     get_filename_component(SHADER_SRC_NAME_WE ${CMAKE_CURRENT_SOURCE_DIR}/realsr-ncnn-vulkan/src/${SHADER_SRC} NAME_WE)
     set(SHADER_SPV_HEX_FILE ${CMAKE_CURRENT_BINARY_DIR}/${SHADER_SRC_NAME_WE}.spv.hex.h)
@@ -70,7 +70,7 @@ macro(spann_add_shader SHADER_SRC)
 endmacro()
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Spann-ncnn-vulkan/src)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/span-ncnn-vulkan/src)
 include_directories(.)
 
 if(OPENMP_FOUND)
@@ -136,7 +136,7 @@ endif()
 if(NOT USE_SYSTEM_NCNN)
   # build ncnn library
   if(NOT EXISTS
-     "${CMAKE_CURRENT_SOURCE_DIR}/Span-ncnn-vulkan/src/ncnn/CMakeLists.txt")
+     "${CMAKE_CURRENT_SOURCE_DIR}/span-ncnn-vulkan/src/ncnn/CMakeLists.txt")
     message(
       FATAL_ERROR
         "The submodules were not downloaded! Please update submodules with \"git submodule update --init --recursive\" and try again."
