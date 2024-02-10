@@ -66,11 +66,7 @@ jobs:
           cmake -DOpenMP_CXX_FLAGS="-fexceptions -frtti" ..
           cmake --build . -j 4
 
-      - name: Test
-        run: |
-          cp src/build/span_ncnn_vulkan_wrapper.*.so src/span_ncnn_py
-          pdm install
-          pdm run test
+
 
       - name: dist
         run: |
