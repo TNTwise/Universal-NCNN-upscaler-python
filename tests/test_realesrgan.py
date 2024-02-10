@@ -5,7 +5,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 import pytest
-from realesrgan_ncnn_py import Realesrgan
+from span_ncnn_py import span
 from skimage.metrics import structural_similarity
 
 print("System version: ", sys.version)
@@ -40,7 +40,7 @@ TEST_IMG = cv2.imread(str(filePATH.parent / "test.png"))
 class Test_Realesrgan:
     def test_animevideov3(self) -> None:
         for _model in [0, 1, 2]:
-            _realesrgan = Realesrgan(gpuid=_gpuid, model=_model)
+            _realesrgan = span.SPAN(gpuid=_gpuid, model=_model)
             outimg = _realesrgan.process_cv2(TEST_IMG)
 
             assert calculate_image_similarity(TEST_IMG, outimg)
@@ -48,7 +48,7 @@ class Test_Realesrgan:
     @pytest.mark.skipif(_gpuid == -1, reason="skip when in GitHub Actions")
     def test_x4plus(self) -> None:
         for _model in [3, 4]:
-            _realesrgan = Realesrgan(gpuid=_gpuid, model=_model)
+            _realesrgan = span.SPAN(gpuid=_gpuid, model=_model)
             outimg = _realesrgan.process_cv2(TEST_IMG)
 
             assert calculate_image_similarity(TEST_IMG, outimg)
