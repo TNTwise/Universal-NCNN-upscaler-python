@@ -4,8 +4,8 @@ requires = ["pdm-backend"]
 
 [project]
 authors = [
-  {name = "Tohrusky", email = "65994850+Tohrusky@users.noreply.github.com"}
-  {name = "TNTWise", email = ""}
+  {name = "Tohrusky", email = "65994850+Tohrusky@users.noreply.github.com"},
+  {name = "TNTWise", email = ""},
   {name = "NevermindNilas", email = "nilascontact@gmail.com"}
 ]
 classifiers = [
