@@ -136,7 +136,7 @@ endif()
 if(NOT USE_SYSTEM_NCNN)
   # build ncnn library
   if(NOT EXISTS
-     "${CMAKE_CURRENT_SOURCE_DIR}/Real-ESRGAN-ncnn-vulkan/src/ncnn/CMakeLists.txt")
+     "${CMAKE_CURRENT_SOURCE_DIR}/Span-ncnn-vulkan/src/ncnn/CMakeLists.txt")
     message(
       FATAL_ERROR
         "The submodules were not downloaded! Please update submodules with \"git submodule update --init --recursive\" and try again."
@@ -233,7 +233,7 @@ if(NOT USE_SYSTEM_NCNN)
   option(WITH_LAYER_layernorm "" OFF)
   option(WITH_LAYER_softplus "" OFF)
 
-  add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Real-ESRGAN-ncnn-vulkan/src/ncnn)
+  add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/span-ncnn-vulkan/src/ncnn)
 endif()
 
 set(SHADER_SPV_HEX_FILES)
@@ -247,7 +247,7 @@ add_custom_target(generate-spirv DEPENDS ${SHADER_SPV_HEX_FILES})
 
 add_subdirectory(pybind11)
 
-pybind11_add_module(span_ncnn_vulkan_wrapper  span_wrapped.cpp span_wrapped.h Real-ESRGAN-ncnn-vulkan/src/span.h Real-ESRGAN-ncnn-vulkan/src/span.cpp)
+pybind11_add_module(span_ncnn_vulkan_wrapper  span_wrapped.cpp span_wrapped.h span-ncnn-vulkan/src/span.h span-ncnn-vulkan/src/span.cpp)
 
 add_dependencies(span_ncnn_vulkan_wrapper generate-spirv)
 
