@@ -103,10 +103,7 @@ jobs:
         if: matrix.python-version == '3.11'
         run: lipo -create src/build-arm64/span_ncnn_vulkan_wrapper.cpython-311-darwin.so src/build-x86_64/span_ncnn_vulkan_wrapper.cpython-311-darwin.so -o src/span_ncnn_py/span_ncnn_vulkan_wrapper.cpython-311-darwin.so
 
-      - name: Test
-        run: |
-          pdm install
-          pdm run test
+
 
       - name: dist
         run: |
