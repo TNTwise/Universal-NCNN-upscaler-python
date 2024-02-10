@@ -68,18 +68,18 @@ jobs:
 
       - name: Test
         run: |
-          echo F | xcopy .\src\build\Release\realesrgan_ncnn_vulkan_wrapper.*.pyd .\src\realesrgan_ncnn_py
-          echo F | xcopy .\tests\vulkan-1.dll .\src\realesrgan_ncnn_py
+          echo F | xcopy .\src\build\Release\span_ncnn_vulkan_wrapper.*.pyd .\src\span_ncnn_py
+          echo F | xcopy .\tests\vulkan-1.dll .\src\span_ncnn_py
           pdm install
           pdm run test
 
       - name: dist
         run: |
           mkdir dist
-          echo D | xcopy .\src\realesrgan_ncnn_py dist
+          echo D | xcopy .\src\span_ncnn_py dist
 
       - name: upload
         uses: actions/upload-artifact@v3
         with:
-          name: realesrgan-ncnn-windows-python${{ matrix.python-version }}
+          name: span-ncnn-windows-python${{ matrix.python-version }}
           path: dist
