@@ -545,7 +545,6 @@ int Span::process(const ncnn::Mat &inimage, ncnn::Mat &outimage) const {
                 cmd.reset();
             }
 
-            fprintf(stderr, "%.2f%%\n", (float) (yi * xtiles + xi) / (ytiles * xtiles) * 100);
         }
 
         // download
