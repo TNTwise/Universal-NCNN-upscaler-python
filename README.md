@@ -1,10 +1,5 @@
 # span-ncnn-py
 
-### If on linux
-```
-cd /usr/lib
-sudo ln -s libomp.so libomp.so.5
-```
 
 ### Custom models:
 - <a href="https://openmodeldb.info/models/4x-ClearRealityV1">ClearRealityV1 (4X)</a> by Kim2091
@@ -43,6 +38,8 @@ For Linux user:
 
 ```sh
 apt install -y libomp5 libvulkan-dev
+cd /usr/lib
+sudo ln -s libomp.so libomp.so.5
 ```
 
 Then, import the span class from the package:
