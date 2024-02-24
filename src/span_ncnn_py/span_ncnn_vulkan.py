@@ -61,7 +61,7 @@ class Span:
             17: {"param": "up3x-conservative", "bin": "up3x-conservative.bin", "scale": 3, "folder": "models/CUGAN/models-pro"},
             18: {"param": "up3x-no-denoise.param", "bin": "up3x-no-denoise.bin", "scale": 3, "folder": "models/CUGAN/models-pro"},
             
-            19: {"param": "sudo_shuffle_cugan-x2.param", "bin": "sudo_shuffle_cugan-x2.bin", "scale": 3, "folder": "models/SHUFFLECUGAN"},
+            19: {"param": "sudo_shuffle_cugan-x2.param", "bin": "sudo_shuffle_cugan-x2.bin", "scale": 2, "folder": "models/SHUFFLECUGAN"},
         }
 
         if self._model == -1:
