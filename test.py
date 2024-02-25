@@ -1,9 +1,9 @@
 from realesrgan_ncnn_py import Realesrgan
-from upscale_ncnn_py import Span
+from upscale_ncnn_py import UPSCALE
 
 from PIL import Image
 
-upscale = Span(gpuid=0,model=4)
+upscale1 = UPSCALE(gpuid=0,model=4)
 with Image.open("input.png") as image:
-    image = upscale.process_pil(image)
+    image = upscale1.process_pil(image)
     image.save("output.jpg", quality=95)
