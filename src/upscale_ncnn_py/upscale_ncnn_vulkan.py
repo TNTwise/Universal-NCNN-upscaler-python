@@ -90,9 +90,9 @@ class UPSCALE:
         channels = int(len(in_bytes) / (_image.width * _image.height))
         out_bytes = (self._scale**2) * len(in_bytes) * b"\x00"
 
-        self.raw_in_image = wrapped.SpanImage(in_bytes, _image.width, _image.height, channels)
+        self.raw_in_image = wrapped.UPSCALEImage(in_bytes, _image.width, _image.height, channels)
 
-        self.raw_out_image = wrapped.SpanImage(
+        self.raw_out_image = wrapped.UPSCALEImage(
             out_bytes,
             self._scale * _image.width,
             self._scale * _image.height,
@@ -136,9 +136,9 @@ class UPSCALE:
 
     def process_bytes(self, _image_bytes: bytes, width: int, height: int, channels: int) -> bytes:
         if self.raw_in_image is None and self.raw_out_image is None:
-            self.raw_in_image = wrapped.SpanImage(_image_bytes, width, height, channels)
+            self.raw_in_image = wrapped.UPSCALEImage(_image_bytes, width, height, channels)
 
-            self.raw_out_image = wrapped.SpanImage(
+            self.raw_out_image = wrapped.UPSCALEImage(
                 (self._scale**2) * len(_image_bytes) * b"\x00",
                 self._scale * width,
                 self._scale * height,
