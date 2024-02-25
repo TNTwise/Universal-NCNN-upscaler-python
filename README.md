@@ -45,13 +45,13 @@ sudo ln -s libomp.so libomp.so.5
 Then, import the upscale class from the package:
 
 ```python
-from upscale_ncnn_py import upscale
+from upscale_ncnn_py import UPSCALE
 ```
 
 To initialize the model:
 
 ```python
-upscale = Span(gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0)
+upscale = UPSCALE(gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0)
 # model can be 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19; 0 for default
 0: {"param": "upscalex2_ch48.param", "bin": "upscalex2_ch48.bin", "scale": 2, "folder": "models/SPAN"},
 1: {"param": "upscalex2_ch52.param", "bin": "upscalex2_ch52.bin", "scale": 2, "folder": "models/SPAN"},
