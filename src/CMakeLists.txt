@@ -1,4 +1,4 @@
-project(span-ncnn-vulkan-python)
+project(upscale-ncnn-vulkan-python)
 
 cmake_minimum_required(VERSION 3.9)
 cmake_policy(SET CMP0078 NEW)
@@ -22,8 +22,8 @@ find_package(Vulkan REQUIRED)
 find_program(GLSLANGVALIDATOR_EXECUTABLE NAMES glslangValidator PATHS $ENV{VULKAN_SDK}/bin NO_CMAKE_FIND_ROOT_PATH)
 message(STATUS "Found glslangValidator: ${GLSLANGVALIDATOR_EXECUTABLE}")
 
-macro(span_add_shader SHADER_SRC)
-    set(SHADER_SRC_FULLPATH ${CMAKE_CURRENT_SOURCE_DIR}/span-ncnn-vulkan/src/${SHADER_SRC})
+macro(upscale_add_shader SHADER_SRC)
+    set(SHADER_SRC_FULLPATH ${CMAKE_CURRENT_SOURCE_DIR}/upscale-ncnn-vulkan/src/${SHADER_SRC})
 
     get_filename_component(SHADER_SRC_NAME_WE ${CMAKE_CURRENT_SOURCE_DIR}/realsr-ncnn-vulkan/src/${SHADER_SRC} NAME_WE)
     set(SHADER_SPV_HEX_FILE ${CMAKE_CURRENT_BINARY_DIR}/${SHADER_SRC_NAME_WE}.spv.hex.h)
@@ -70,7 +70,7 @@ macro(span_add_shader SHADER_SRC)
 endmacro()
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/span-ncnn-vulkan/src)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/upscale-ncnn-vulkan/src)
 include_directories(.)
 
 if(OPENMP_FOUND)
@@ -136,7 +136,7 @@ endif()
 if(NOT USE_SYSTEM_NCNN)
   # build ncnn library
   if(NOT EXISTS
-     "${CMAKE_CURRENT_SOURCE_DIR}/span-ncnn-vulkan/src/ncnn/CMakeLists.txt")
+     "${CMAKE_CURRENT_SOURCE_DIR}/upscale-ncnn-vulkan/src/ncnn/CMakeLists.txt")
     message(
       FATAL_ERROR
         "The submodules were not downloaded! Please update submodules with \"git submodule update --init --recursive\" and try again."
@@ -260,27 +260,27 @@ if(NOT USE_SYSTEM_NCNN)
     option(WITH_LAYER_celu "" ON)
     option(WITH_LAYER_shrink "" ON)
 
-  add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/span-ncnn-vulkan/src/ncnn)
+  add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/upscale-ncnn-vulkan/src/ncnn)
 endif()
 
 set(SHADER_SPV_HEX_FILES)
 
-span_add_shader(span_preproc.comp)
-span_add_shader(span_postproc.comp)
-span_add_shader(span_preproc_tta.comp)
-span_add_shader(span_postproc_tta.comp)
+upscale_add_shader(upscale_preproc.comp)
+upscale_add_shader(upscale_postproc.comp)
+upscale_add_shader(upscale_preproc_tta.comp)
+upscale_add_shader(upscale_postproc_tta.comp)
 
 add_custom_target(generate-spirv DEPENDS ${SHADER_SPV_HEX_FILES})
 
 add_subdirectory(pybind11)
 
-pybind11_add_module(span_ncnn_vulkan_wrapper  span_wrapped.cpp span_wrapped.h span-ncnn-vulkan/src/span.h span-ncnn-vulkan/src/span.cpp)
+pybind11_add_module(upscale_ncnn_vulkan_wrapper  upscale_wrapped.cpp upscale_wrapped.h upscale-ncnn-vulkan/src/upscale.h upscale-ncnn-vulkan/src/upscale.cpp)
 
-add_dependencies(span_ncnn_vulkan_wrapper generate-spirv)
+add_dependencies(upscale_ncnn_vulkan_wrapper generate-spirv)
 
-set_property(TARGET span_ncnn_vulkan_wrapper PROPERTY CXX_STANDARD 11)
+set_property(TARGET upscale_ncnn_vulkan_wrapper PROPERTY CXX_STANDARD 11)
 
-set(SPAN_LINK_LIBRARIES ncnn ${Vulkan_LIBRARY})
+set(UPSCALE_LINK_LIBRARIES ncnn ${Vulkan_LIBRARY})
 
 if(USE_STATIC_MOLTENVK)
   find_library(CoreFoundation NAMES CoreFoundation)
@@ -294,7 +294,7 @@ if(USE_STATIC_MOLTENVK)
 
   list(
     APPEND
-    SPAN_LINK_LIBRARIES
+    UPSCALE_LINK_LIBRARIES
     ${Metal}
     ${QuartzCore}
     ${CoreGraphics}
@@ -306,7 +306,7 @@ if(USE_STATIC_MOLTENVK)
 endif()
 
 if(OPENMP_FOUND)
-  list(APPEND SPAN_LINK_LIBRARIES ${OpenMP_CXX_LIBRARIES})
+  list(APPEND UPSCALE_LINK_LIBRARIES ${OpenMP_CXX_LIBRARIES})
 endif()
 
-target_link_libraries(span_ncnn_vulkan_wrapper PRIVATE ${SPAN_LINK_LIBRARIES})
+target_link_libraries(upscale_ncnn_vulkan_wrapper PRIVATE ${UPSCALE_LINK_LIBRARIES})

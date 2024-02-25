@@ -71,10 +71,10 @@ jobs:
       - name: dist
         run: |
           mkdir dist
-          echo D | xcopy .\src\span_ncnn_py dist
+          echo D | xcopy .\src\upscale_ncnn_py dist
 
       - name: upload
         uses: actions/upload-artifact@v3
         with:
-          name: span-ncnn-windows-python${{ matrix.python-version }}
+          name: upscale-ncnn-windows-python${{ matrix.python-version }}
           path: dist

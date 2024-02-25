@@ -74,10 +74,10 @@ jobs:
       - name: dist
         run: |
           mkdir dist
-          cp -r src/span_ncnn_py dist
+          cp -r src/upscale_ncnn_py dist
 
       - name: upload
         uses: actions/upload-artifact@v3
         with:
-          name: span-ncnn-linux-x64-clang-python${{ matrix.python-version }}
+          name: upscale-ncnn-linux-x64-clang-python${{ matrix.python-version }}
           path: dist

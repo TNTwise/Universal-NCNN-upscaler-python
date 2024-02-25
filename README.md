@@ -1,16 +1,16 @@
-# span-ncnn-py
+# upscale-ncnn-py
 
 
 ### Custom models:
 - <a href="https://openmodeldb.info/models/4x-ClearRealityV1">ClearRealityV1 (4X)</a> by Kim2091
 - <a href="https://github.com/terrainer/AI-Upscaling-Models/tree/main/4xSPANkendata">SPANkendata (4X)</a> by terrainer
 - <a href="https://github.com/Phhofm/models"> 2xHFA2kSpan (2x)</a> by Phhofm
-Python Binding for span-ncnn-py with PyBind11
+Python Binding for upscale-ncnn-py with PyBind11
 
 [![PyPI version](https://badge.fury.io/py/realesrgan-ncnn-py.svg?123456)](https://badge.fury.io/py/realesrgan-ncnn-py?123456)
 [![test_pip](https://github.com/Final2x/realesrgan-ncnn-py/actions/workflows/test_pip.yml/badge.svg)](https://github.com/Final2x/realesrgan-ncnn-py/actions/workflows/test_pip.yml)
 [![Release](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/Release.yml/badge.svg)](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/Release.yml)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/span-ncnn-py)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/upscale-ncnn-py)
 
 Span go brrr for upscaling images.
 
@@ -20,7 +20,7 @@ Span go brrr for upscaling images.
 | :-----------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------: | :----------------: | :---------: | :----------------: |
 | Linux (Clang) |         [![CI-Linux-x64-Clang](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Linux-x64-Clang.yml/badge.svg)](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Linux-x64-Clang.yml)         |      —      | :white_check_mark: |      —      | :white_check_mark: |
 |  Linux (GCC)  |            [![CI-Linux-x64-GCC](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Linux-x64-GCC.yml/badge.svg)](https://github.com/Tohrusky/realesrgan-ncnn-py/actions/workflows/CI-Linux-x64-GCC.yml)            |      —      | :white_check_mark: |      —      | :white_check_mark: |
-|    Windows    |       [![CI-Windows-x64-MSVC](https://github.com/Tohrusky/span-ncnn-py/actions/workflows/CI-Windows-x64-MSVC.yml/badge.svg)](https://github.com/Tohrusky/span-ncnn-py/actions/workflows/CI-Windows-x64-MSVC.yml)        |      —      | :white_check_mark: |      —      | :white_check_mark: |
+|    Windows    |       [![CI-Windows-x64-MSVC](https://github.com/Tohrusky/upscale-ncnn-py/actions/workflows/CI-Windows-x64-MSVC.yml/badge.svg)](https://github.com/Tohrusky/upscale-ncnn-py/actions/workflows/CI-Windows-x64-MSVC.yml)        |      —      | :white_check_mark: |      —      | :white_check_mark: |
 |     MacOS     | [![CI-MacOS-Universal-Clang](https://github.com/Tohrusky/realcugan-ncnn-py/actions/workflows/CI-MacOS-Universal-Clang.yml/badge.svg)](https://github.com/Tohrusky/realcugan-ncnn-py/actions/workflows/CI-MacOS-Universal-Clang.yml) |      —      | :white_check_mark: |      —      | :white_check_mark: |
 |  MacOS (ARM)  | [![CI-MacOS-Universal-Clang](https://github.com/Tohrusky/realcugan-ncnn-py/actions/workflows/CI-MacOS-Universal-Clang.yml/badge.svg)](https://github.com/Tohrusky/realcugan-ncnn-py/actions/workflows/CI-MacOS-Universal-Clang.yml) |      —      | :white_check_mark: |      —      | :white_check_mark: |
 
@@ -31,7 +31,7 @@ Span go brrr for upscaling images.
 To use this package, simply install it via pip:
 
 ```sh
-pip install span-ncnn-py
+pip install upscale-ncnn-py
 ```
 
 For Linux user:
@@ -42,21 +42,21 @@ cd /usr/lib
 sudo ln -s libomp.so libomp.so.5
 ```
 
-Then, import the span class from the package:
+Then, import the upscale class from the package:
 
 ```python
-from span_ncnn_py import span
+from upscale_ncnn_py import upscale
 ```
 
 To initialize the model:
 
 ```python
-span = Span(gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0)
+upscale = Span(gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0)
 # model can be 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19; 0 for default
-0: {"param": "spanx2_ch48.param", "bin": "spanx2_ch48.bin", "scale": 2, "folder": "models/SPAN"},
-1: {"param": "spanx2_ch52.param", "bin": "spanx2_ch52.bin", "scale": 2, "folder": "models/SPAN"},
-2: {"param": "spanx4_ch48.param", "bin": "spanx4_ch48.bin", "scale": 4, "folder": "models/SPAN"},
-3: {"param": "spanx4_ch52.param", "bin": "spanx4_ch52.bin", "scale": 4, "folder": "models/SPAN"},
+0: {"param": "upscalex2_ch48.param", "bin": "upscalex2_ch48.bin", "scale": 2, "folder": "models/SPAN"},
+1: {"param": "upscalex2_ch52.param", "bin": "upscalex2_ch52.bin", "scale": 2, "folder": "models/SPAN"},
+2: {"param": "upscalex4_ch48.param", "bin": "upscalex4_ch48.bin", "scale": 4, "folder": "models/SPAN"},
+3: {"param": "upscalex4_ch52.param", "bin": "upscalex4_ch52.bin", "scale": 4, "folder": "models/SPAN"},
             
 4: {"param": "realesr-animevideov3-x2.param", "bin": "realesr-animevideov3-x2.bin", "scale": 2, "folder": "models/ESRGAN"},
 5: {"param": "realesr-animevideov3-x3.param", "bin": "realesr-animevideov3-x3.bin", "scale": 3, "folder": "models/ESRGAN"},
@@ -77,9 +77,9 @@ Once the model is initialized, you can use the upscale method to super-resolve y
 ```python
 from PIL import Image
 
-span = span(gpuid=0)
+upscale = upscale(gpuid=0)
 with Image.open("input.jpg") as image:
-    image = span.process_pil(image)
+    image = upscale.process_pil(image)
     image.save("output.jpg", quality=95)
 ```
 
@@ -88,9 +88,9 @@ with Image.open("input.jpg") as image:
 ```python
 import cv2
 
-span = span(gpuid=0)
+upscale = upscale(gpuid=0)
 image = cv2.imdecode(np.fromfile("input.jpg", dtype=np.uint8), cv2.IMREAD_COLOR)
-image = span.process_cv2(image)
+image = upscale.process_cv2(image)
 cv2.imencode(".jpg", image)[1].tofile("output_cv2.jpg")
 ```
 

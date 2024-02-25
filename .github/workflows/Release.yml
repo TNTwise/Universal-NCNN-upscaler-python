@@ -92,25 +92,25 @@ jobs:
       - name: build python 3.9 wheel
         if: matrix.python-version == '3.9'
         run: |
-          lipo -create src/build-arm64/span_ncnn_vulkan_wrapper.cpython-39-darwin.so src/build-x86_64/span_ncnn_vulkan_wrapper.cpython-39-darwin.so -o src/span_ncnn_py/span_ncnn_vulkan_wrapper.cpython-39-darwin.so
+          lipo -create src/build-arm64/upscale_ncnn_vulkan_wrapper.cpython-39-darwin.so src/build-x86_64/upscale_ncnn_vulkan_wrapper.cpython-39-darwin.so -o src/upscale_ncnn_py/upscale_ncnn_vulkan_wrapper.cpython-39-darwin.so
           pdm build --no-sdist --config-setting="--python-tag=cp39" --config-setting="--plat-name=macosx_11_0_universal2"
 
       - name: build python 3.10 wheel
         if: matrix.python-version == '3.10'
         run: |
-          lipo -create src/build-arm64/span_ncnn_vulkan_wrapper.cpython-310-darwin.so src/build-x86_64/span_ncnn_vulkan_wrapper.cpython-310-darwin.so -o src/span_ncnn_py/span_ncnn_vulkan_wrapper.cpython-310-darwin.so
+          lipo -create src/build-arm64/upscale_ncnn_vulkan_wrapper.cpython-310-darwin.so src/build-x86_64/upscale_ncnn_vulkan_wrapper.cpython-310-darwin.so -o src/upscale_ncnn_py/upscale_ncnn_vulkan_wrapper.cpython-310-darwin.so
           pdm build --no-sdist --config-setting="--python-tag=cp310" --config-setting="--plat-name=macosx_11_0_universal2"
 
       - name: build python 3.11 wheel
         if: matrix.python-version == '3.11'
         run: |
-          lipo -create src/build-arm64/span_ncnn_vulkan_wrapper.cpython-311-darwin.so src/build-x86_64/span_ncnn_vulkan_wrapper.cpython-311-darwin.so -o src/span_ncnn_py/span_ncnn_vulkan_wrapper.cpython-311-darwin.so
+          lipo -create src/build-arm64/upscale_ncnn_vulkan_wrapper.cpython-311-darwin.so src/build-x86_64/upscale_ncnn_vulkan_wrapper.cpython-311-darwin.so -o src/upscale_ncnn_py/upscale_ncnn_vulkan_wrapper.cpython-311-darwin.so
           pdm build --no-sdist --config-setting="--python-tag=cp311" --config-setting="--plat-name=macosx_11_0_universal2"
 
       - name: build python 3.12 wheel
         if: matrix.python-version == '3.12'
         run: |
-          lipo -create src/build-arm64/span_ncnn_vulkan_wrapper.cpython-312-darwin.so src/build-x86_64/span_ncnn_vulkan_wrapper.cpython-312-darwin.so -o src/span_ncnn_py/span_ncnn_vulkan_wrapper.cpython-312-darwin.so
+          lipo -create src/build-arm64/upscale_ncnn_vulkan_wrapper.cpython-312-darwin.so src/build-x86_64/upscale_ncnn_vulkan_wrapper.cpython-312-darwin.so -o src/upscale_ncnn_py/upscale_ncnn_vulkan_wrapper.cpython-312-darwin.so
           pdm build --no-sdist --config-setting="--python-tag=cp312" --config-setting="--plat-name=macosx_11_0_universal2"
 
       - name: upload
@@ -169,7 +169,7 @@ jobs:
 
       - name: pre build wheel
         run: |
-          echo F | xcopy .\src\build\Release\span_ncnn_vulkan_wrapper.*.pyd .\src\span_ncnn_py
+          echo F | xcopy .\src\build\Release\upscale_ncnn_vulkan_wrapper.*.pyd .\src\upscale_ncnn_py
 
       - name: build python 3.9 wheel
         if: matrix.python-version == '3.9'
@@ -246,7 +246,7 @@ jobs:
 
       - name: pre build wheel
         run: |
-          cp src/build/span_ncnn_vulkan_wrapper.*.so src/span_ncnn_py
+          cp src/build/upscale_ncnn_vulkan_wrapper.*.so src/upscale_ncnn_py
 
       - name: build python 3.9 wheel
         if: matrix.python-version == '3.9'
