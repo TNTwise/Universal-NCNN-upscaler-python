@@ -1,0 +1,2 @@
+"/usr/bin/gcc-ar" cr libOSDependent.a CMakeFiles/OSDependent.dir/ossource.cpp.o
+"/usr/bin/gcc-ranlib" libOSDependent.a

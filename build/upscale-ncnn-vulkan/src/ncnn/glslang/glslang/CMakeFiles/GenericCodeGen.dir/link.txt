@@ -1,0 +1,2 @@
+"/usr/bin/gcc-ar" cr libGenericCodeGen.a CMakeFiles/GenericCodeGen.dir/GenericCodeGen/CodeGen.cpp.o CMakeFiles/GenericCodeGen.dir/GenericCodeGen/Link.cpp.o
+"/usr/bin/gcc-ranlib" libGenericCodeGen.a

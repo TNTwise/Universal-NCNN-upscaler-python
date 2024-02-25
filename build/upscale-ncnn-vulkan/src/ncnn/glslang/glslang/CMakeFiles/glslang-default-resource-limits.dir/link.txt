@@ -1,0 +1,2 @@
+"/usr/bin/gcc-ar" cr libglslang-default-resource-limits.a "CMakeFiles/glslang-default-resource-limits.dir/ResourceLimits/ResourceLimits.cpp.o" "CMakeFiles/glslang-default-resource-limits.dir/ResourceLimits/resource_limits_c.cpp.o"
+"/usr/bin/gcc-ranlib" libglslang-default-resource-limits.a
