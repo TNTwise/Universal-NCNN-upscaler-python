@@ -6,6 +6,7 @@
 - <a href="https://openmodeldb.info/models/4x-ClearRealityV1">ClearRealityV1 (4X)</a> by Kim2091
 - <a href="https://github.com/terrainer/AI-Upscaling-Models/tree/main/4xSPANkendata">SPANkendata (4X)</a> by terrainer
 - <a href="https://github.com/Phhofm/models"> 2xHFA2kSpan (2x)</a> by Phhofm
+https://openmodeldb.info/models/2x-sudo-shuffle-cugan-9-584-969
 Python Binding for upscale-ncnn-py with PyBind11
 
 [![PyPI version](https://badge.fury.io/py/realesrgan-ncnn-py.svg?123456)](https://badge.fury.io/py/realesrgan-ncnn-py?123456)
