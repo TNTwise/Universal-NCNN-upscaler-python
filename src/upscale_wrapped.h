@@ -24,7 +24,7 @@ public:
 
 class UPSCALEWrapped : public UPSCALE {
 public:
-    UPSCALEWrapped(int gpuid, bool tta_mode, int num_threads = 1);
+    UPSCALEWrapped(int gpuid, bool tta_mode, int num_threads);
 
     int get_tilesize() const;
 

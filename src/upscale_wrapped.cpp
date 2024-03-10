@@ -17,7 +17,8 @@ pybind11::bytes UPSCALEImage::get_data() const {
 }
 
 // UPSCALEWrapped
-UPSCALEWrapped::UPSCALEWrapped(int gpuid, bool tta_mode, int num_threads): UPSCALE(gpuid, tta_mode, num_threads) {
+UPSCALEWrapped::UPSCALEWrapped(int gpuid, bool tta_mode, int num_threads)
+        : UPSCALE(gpuid, tta_mode, num_threads) {
     this->gpuid = gpuid;
 }
 
@@ -77,7 +78,7 @@ void destroy_gpu_instance() { ncnn::destroy_gpu_instance(); }
 
 PYBIND11_MODULE(upscale_ncnn_vulkan_wrapper, m) {
     pybind11::class_<UPSCALEWrapped>(m, "UPSCALEWrapped")
-            .def(pybind11::init<int, bool>())
+            .def(pybind11::init<int, bool, int>())
             .def("load", &UPSCALEWrapped::load)
             .def("process", &UPSCALEWrapped::process)
             .def("set_parameters", &UPSCALEWrapped::set_parameters);
