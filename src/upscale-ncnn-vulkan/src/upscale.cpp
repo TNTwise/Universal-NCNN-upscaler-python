@@ -44,8 +44,10 @@ static const uint32_t upscale_postproc_tta_int8s_spv_data[] = {
 #include "upscale_postproc_tta_int8s.spv.hex.h"
 };
 
-UPSCALE::UPSCALE(int gpuid, bool _tta_mode) {
+UPSCALE::UPSCALE(int gpuid, bool _tta_mode, int num_threads) {
     vkdev = gpuid == -1 ? 0 : ncnn::get_gpu_device(gpuid);
+
+    net.opt.num_threads = num_threads;
 
     upscale_preproc = 0;
     upscale_postproc = 0;

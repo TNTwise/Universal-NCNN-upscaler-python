@@ -17,7 +17,7 @@ pybind11::bytes UPSCALEImage::get_data() const {
 }
 
 // UPSCALEWrapped
-UPSCALEWrapped::UPSCALEWrapped(int gpuid, bool tta_mode): UPSCALE(gpuid, tta_mode) {
+UPSCALEWrapped::UPSCALEWrapped(int gpuid, bool tta_mode, int num_threads): UPSCALE(gpuid, tta_mode, num_threads) {
     this->gpuid = gpuid;
 }
 

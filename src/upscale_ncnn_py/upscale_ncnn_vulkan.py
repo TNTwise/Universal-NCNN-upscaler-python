@@ -13,14 +13,14 @@ except ImportError:
 
 
 class UPSCALE:
-    def __init__(self, gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0):
+    def __init__(self, gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0 ,num_threads: int = 1,):
         assert gpuid >= -1, "gpuid must >= -1"
         assert tilesize == 0 or tilesize >= 32, "tilesize must >= 32 or be 0"
         assert model >= -1, "model must > 0 or -1"
-
+        assert num_threads >= 1, "num_threads must be a positive integer"
         self._gpuid = gpuid
 
-        self._upscale_object = wrapped.UPSCALEWrapped(gpuid, tta_mode)
+        self._upscale_object = wrapped.UPSCALEWrapped(gpuid, tta_mode, num_threads)
 
         self._tilesize = tilesize
         self._model = model
