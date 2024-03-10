@@ -1,4 +1,4 @@
-# Install script for directory: /home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/src
+# Install script for directory: /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dupscale_ncnn_vulkan_wrapper_EXPORTS
 
-CXX_INCLUDES = -I/home/pax/Universal-NCNN-upscaler-python/build -I/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src -I/home/pax/Universal-NCNN-upscaler-python/src/. -I/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/src -I/home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/src -isystem /usr/include/python3.11 -isystem /home/pax/Universal-NCNN-upscaler-python/src/pybind11/include
+CXX_INCLUDES = -I/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build -I/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src -I/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/. -I/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/src -I/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/src -isystem /usr/include/python3.11 -isystem /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/pybind11/include
 
 CXX_FLAGS =  -fopenmp -O3 -DNDEBUG -std=gnu++11 -flto=auto -fno-fat-lto-objects -fPIC -fvisibility=hidden -fopenmp
 

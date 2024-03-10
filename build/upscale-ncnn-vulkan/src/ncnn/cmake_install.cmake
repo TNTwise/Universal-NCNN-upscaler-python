@@ -1,4 +1,4 @@
-# Install script for directory: /home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn
+# Install script for directory: /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/cmake_install.cmake")
-  include("/home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/src/cmake_install.cmake")
+  include("/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/cmake_install.cmake")
+  include("/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/src/cmake_install.cmake")
 
 endif()
 

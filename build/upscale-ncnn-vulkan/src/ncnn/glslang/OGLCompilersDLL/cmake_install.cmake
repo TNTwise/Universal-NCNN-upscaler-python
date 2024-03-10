@@ -1,4 +1,4 @@
-# Install script for directory: /home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/OGLCompilersDLL
+# Install script for directory: /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/OGLCompilersDLL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,10 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/OGLCompilersDLL/libOGLCompiler.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/OGLCompilersDLL/libOGLCompiler.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "/home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/OGLCompilersDLL/OGLCompilerTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/OGLCompilersDLL/OGLCompilerTargets.cmake")
 endif()
 

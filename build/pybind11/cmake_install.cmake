@@ -1,4 +1,4 @@
-# Install script for directory: /home/pax/Universal-NCNN-upscaler-python/src/pybind11
+# Install script for directory: /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/pybind11
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

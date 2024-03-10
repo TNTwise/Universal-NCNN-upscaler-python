@@ -1,4 +1,4 @@
-# Install script for directory: /home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/glslang/OSDependent/Unix
+# Install script for directory: /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/glslang/OSDependent/Unix
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,10 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/glslang/OSDependent/Unix/libOSDependent.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/glslang/OSDependent/Unix/libOSDependent.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "/home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/glslang/OSDependent/Unix/OSDependentTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/glslang/OSDependent/Unix/OSDependentTargets.cmake")
 endif()
 

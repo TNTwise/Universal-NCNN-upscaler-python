@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pax/Universal-NCNN-upscaler-python/src
+CMAKE_SOURCE_DIR = /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pax/Universal-NCNN-upscaler-python/build
+CMAKE_BINARY_DIR = /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pax/Universal-NCNN-upscaler-python/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles /home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang//CMakeFiles/progress.marks
-	cd /home/pax/Universal-NCNN-upscaler-python/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upscale-ncnn-vulkan/src/ncnn/glslang/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles 0
+	cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang//CMakeFiles/progress.marks
+	cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upscale-ncnn-vulkan/src/ncnn/glslang/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pax/Universal-NCNN-upscaler-python/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upscale-ncnn-vulkan/src/ncnn/glslang/clean
+	cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upscale-ncnn-vulkan/src/ncnn/glslang/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,17 +148,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pax/Universal-NCNN-upscaler-python/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upscale-ncnn-vulkan/src/ncnn/glslang/preinstall
+	cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upscale-ncnn-vulkan/src/ncnn/glslang/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pax/Universal-NCNN-upscaler-python/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upscale-ncnn-vulkan/src/ncnn/glslang/preinstall
+	cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upscale-ncnn-vulkan/src/ncnn/glslang/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pax/Universal-NCNN-upscaler-python/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -184,6 +184,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pax/Universal-NCNN-upscaler-python/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp" "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o"
+  "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp" "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV
+# Install script for directory: /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,35 +43,35 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/libSPIRV.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/libSPIRV.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "/home/pax/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/SPIRVTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/SPIRVTargets.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/glslang/SPIRV" TYPE FILE FILES
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/bitutils.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/spirv.hpp"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.std.450.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.EXT.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.KHR.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GlslangToSpv.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/hex_float.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/Logger.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/SpvBuilder.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/spvIR.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/doc.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/SpvTools.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/disassemble.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.AMD.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.NV.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.ARM.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/NonSemanticDebugPrintf.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/NonSemanticShaderDebugInfo100.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/SPVRemapper.h"
-    "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/doc.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/bitutils.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/spirv.hpp"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.std.450.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.EXT.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.KHR.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GlslangToSpv.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/hex_float.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/Logger.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/SpvBuilder.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/spvIR.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/doc.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/SpvTools.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/disassemble.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.AMD.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.NV.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/GLSL.ext.ARM.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/NonSemanticDebugPrintf.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/NonSemanticShaderDebugInfo100.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/SPVRemapper.h"
+    "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/doc.h"
     )
 endif()
 

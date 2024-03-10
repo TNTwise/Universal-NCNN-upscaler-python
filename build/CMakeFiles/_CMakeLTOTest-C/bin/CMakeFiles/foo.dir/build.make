@@ -56,10 +56,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src
+CMAKE_SOURCE_DIR = /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin
+CMAKE_BINARY_DIR = /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/foo.dir/depend.make
@@ -73,17 +73,17 @@ include CMakeFiles/foo.dir/progress.make
 include CMakeFiles/foo.dir/flags.make
 
 CMakeFiles/foo.dir/foo.c.o: CMakeFiles/foo.dir/flags.make
-CMakeFiles/foo.dir/foo.c.o: /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/foo.dir/foo.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/foo.dir/foo.c.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+CMakeFiles/foo.dir/foo.c.o: /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/foo.dir/foo.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/foo.dir/foo.c.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
 
 CMakeFiles/foo.dir/foo.c.i: cmake_force
 	@echo "Preprocessing C source to CMakeFiles/foo.dir/foo.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c > CMakeFiles/foo.dir/foo.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c > CMakeFiles/foo.dir/foo.c.i
 
 CMakeFiles/foo.dir/foo.c.s: cmake_force
 	@echo "Compiling C source to assembly CMakeFiles/foo.dir/foo.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c -o CMakeFiles/foo.dir/foo.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c -o CMakeFiles/foo.dir/foo.c.s
 
 # Object files for target foo
 foo_OBJECTS = \
@@ -95,7 +95,7 @@ foo_EXTERNAL_OBJECTS =
 libfoo.a: CMakeFiles/foo.dir/foo.c.o
 libfoo.a: CMakeFiles/foo.dir/build.make
 libfoo.a: CMakeFiles/foo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libfoo.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libfoo.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/foo.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=$(VERBOSE)
 
@@ -108,6 +108,6 @@ CMakeFiles/foo.dir/clean:
 .PHONY : CMakeFiles/foo.dir/clean
 
 CMakeFiles/foo.dir/depend:
-	cd /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+	cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
 .PHONY : CMakeFiles/foo.dir/depend
 

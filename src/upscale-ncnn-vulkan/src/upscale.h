@@ -12,7 +12,7 @@
 
 class UPSCALE {
 public:
-    UPSCALE(int gpuid, bool tta_mode = false);
+    UPSCALE(int gpuid, bool tta_mode = false, int num_threads = 1);
 
     ~UPSCALE();
 

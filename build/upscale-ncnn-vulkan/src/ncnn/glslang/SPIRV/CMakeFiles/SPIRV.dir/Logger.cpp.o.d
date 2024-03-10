@@ -1,7 +1,7 @@
 upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/Logger.cpp.o: \
- /home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/Logger.cpp \
+ /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/Logger.cpp \
  /usr/include/stdc-predef.h \
- /home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/Logger.h \
+ /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/ncnn/glslang/SPIRV/Logger.h \
  /usr/include/c++/13.2.1/string \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \

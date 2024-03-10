@@ -7,7 +7,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:233 (message)"
       - "CMakeLists.txt:1 (project)"
     message: |
-      The system is: Linux - 6.7.6-zen1-1-zen - x86_64
+      The system is: Linux - 6.7.9-zen1-1-zen - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+        /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/3.28.3/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -50,7 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+        /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -61,21 +61,21 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-746Ubu"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-746Ubu"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-NmspXo"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-NmspXo"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-746Ubu'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-NmspXo'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bb0db/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_bb0db.dir/build.make CMakeFiles/cmTC_bb0db.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-746Ubu'
-        Building C object CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f3b69/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f3b69.dir/build.make CMakeFiles/cmTC_f3b69.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-NmspXo'
+        Building C object CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         Target: x86_64-pc-linux-gnu
@@ -83,8 +83,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.2.1 20230801 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb0db.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bb0db.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccDChrjz.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3b69.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f3b69.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc2bsMVO.s
         GNU C17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 13.2.1 20230801, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -98,15 +98,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: eb0b45108af02c02a078961940bce3e9
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb0db.dir/'
-         as -v --64 -o CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o /tmp/ccDChrjz.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3b69.dir/'
+         as -v --64 -o CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o /tmp/cc2bsMVO.s
         GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_bb0db
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb0db.dir/link.txt --verbose=1
-        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o -o cmTC_bb0db 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f3b69
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3b69.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o -o cmTC_f3b69 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper
@@ -117,10 +117,10 @@ events:
         gcc version 13.2.1 20230801 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_bb0db' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bb0db.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJoXGha.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bb0db /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_bb0db' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bb0db.'
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-746Ubu'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f3b69' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f3b69.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgbXprZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f3b69 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f3b69' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f3b69.'
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-NmspXo'
         
       exitCode: 0
   -
@@ -154,13 +154,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-746Ubu']
+        ignore line: [Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-NmspXo']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bb0db/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_bb0db.dir/build.make CMakeFiles/cmTC_bb0db.dir/build]
-        ignore line: [make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-746Ubu']
-        ignore line: [Building C object CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f3b69/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_f3b69.dir/build.make CMakeFiles/cmTC_f3b69.dir/build]
+        ignore line: [make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-NmspXo']
+        ignore line: [Building C object CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -168,8 +168,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.2.1 20230801 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb0db.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bb0db.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccDChrjz.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3b69.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f3b69.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc2bsMVO.s]
         ignore line: [GNU C17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.2.1 20230801  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -183,15 +183,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: eb0b45108af02c02a078961940bce3e9]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb0db.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o /tmp/ccDChrjz.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3b69.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o /tmp/cc2bsMVO.s]
         ignore line: [GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_bb0db]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb0db.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o -o cmTC_bb0db ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f3b69]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3b69.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o -o cmTC_f3b69 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper]
@@ -202,13 +202,13 @@ events:
         ignore line: [gcc version 13.2.1 20230801 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_bb0db' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bb0db.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJoXGha.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bb0db /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f3b69' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f3b69.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgbXprZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f3b69 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccJoXGha.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccgbXprZ.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -224,7 +224,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_bb0db] ==> ignore
+          arg [cmTC_f3b69] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o]
@@ -233,7 +233,7 @@ events:
           arg [-L/lib/../lib] ==> dir [/lib/../lib]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..]
-          arg [CMakeFiles/cmTC_bb0db.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_f3b69.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -270,21 +270,21 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lyAlfA"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lyAlfA"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-t2V1wk"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-t2V1wk"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lyAlfA'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-t2V1wk'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_22aa1/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_22aa1.dir/build.make CMakeFiles/cmTC_22aa1.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lyAlfA'
-        Building CXX object CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f86a4/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f86a4.dir/build.make CMakeFiles/cmTC_f86a4.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-t2V1wk'
+        Building CXX object CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -292,8 +292,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.2.1 20230801 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aa1.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_22aa1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc7oLAvT.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f86a4.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f86a4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccxKWiav.s
         GNU C++17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 13.2.1 20230801, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -310,15 +310,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: f089b864c6bcbc2427e9850aa6414a11
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aa1.dir/'
-         as -v --64 -o CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7oLAvT.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f86a4.dir/'
+         as -v --64 -o CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxKWiav.s
         GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_22aa1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22aa1.dir/link.txt --verbose=1
-        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_22aa1 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_f86a4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f86a4.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f86a4 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper
@@ -329,10 +329,10 @@ events:
         gcc version 13.2.1 20230801 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_22aa1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_22aa1.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgMEawH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_22aa1 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_22aa1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_22aa1.'
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lyAlfA'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f86a4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f86a4.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cczcvjgN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f86a4 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f86a4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f86a4.'
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-t2V1wk'
         
       exitCode: 0
   -
@@ -372,13 +372,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lyAlfA']
+        ignore line: [Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-t2V1wk']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_22aa1/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_22aa1.dir/build.make CMakeFiles/cmTC_22aa1.dir/build]
-        ignore line: [make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lyAlfA']
-        ignore line: [Building CXX object CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f86a4/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_f86a4.dir/build.make CMakeFiles/cmTC_f86a4.dir/build]
+        ignore line: [make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-t2V1wk']
+        ignore line: [Building CXX object CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -386,8 +386,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.2.1 20230801 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aa1.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_22aa1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc7oLAvT.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f86a4.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f86a4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccxKWiav.s]
         ignore line: [GNU C++17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.2.1 20230801  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -404,15 +404,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f089b864c6bcbc2427e9850aa6414a11]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aa1.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7oLAvT.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f86a4.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxKWiav.s]
         ignore line: [GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_22aa1]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22aa1.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_22aa1 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_f86a4]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f86a4.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f86a4 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper]
@@ -423,13 +423,13 @@ events:
         ignore line: [gcc version 13.2.1 20230801 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_22aa1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_22aa1.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgMEawH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_22aa1 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f86a4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f86a4.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cczcvjgN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f86a4 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccgMEawH.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cczcvjgN.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -445,7 +445,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_22aa1] ==> ignore
+          arg [cmTC_f86a4] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o]
@@ -454,7 +454,7 @@ events:
           arg [-L/lib/../lib] ==> dir [/lib/../lib]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..]
-          arg [CMakeFiles/cmTC_22aa1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_f86a4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -489,8 +489,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-fW2ybD"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-fW2ybD"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TIqpHq"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TIqpHq"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -500,17 +500,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-fW2ybD'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TIqpHq'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5b4ab/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_5b4ab.dir/build.make CMakeFiles/cmTC_5b4ab.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-fW2ybD'
-        Building C object CMakeFiles/cmTC_5b4ab.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5b4ab.dir/src.c.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-fW2ybD/src.c
-        Linking C executable cmTC_5b4ab
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b4ab.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_5b4ab.dir/src.c.o -o cmTC_5b4ab 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-fW2ybD'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7cf57/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_7cf57.dir/build.make CMakeFiles/cmTC_7cf57.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TIqpHq'
+        Building C object CMakeFiles/cmTC_7cf57.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_7cf57.dir/src.c.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TIqpHq/src.c
+        Linking C executable cmTC_7cf57
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cf57.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_7cf57.dir/src.c.o -o cmTC_7cf57 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TIqpHq'
         
       exitCode: 0
   -
@@ -521,8 +521,8 @@ events:
       - "CMakeLists.txt:19 (find_package)"
     description: "Detecting C OpenMP compiler info"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -532,13 +532,13 @@ events:
       variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c606b/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_c606b.dir/build.make CMakeFiles/cmTC_c606b.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ'
-        Building C object CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o
-        /usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ/OpenMPTryFlag.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_80fa5/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_80fa5.dir/build.make CMakeFiles/cmTC_80fa5.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d'
+        Building C object CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o
+        /usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d/OpenMPTryFlag.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         Target: x86_64-pc-linux-gnu
@@ -546,8 +546,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.2.1 20230801 (GCC) 
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c606b.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v -D_REENTRANT /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_c606b.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccBIYLb2.s
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_80fa5.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v -D_REENTRANT /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_80fa5.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccoy0LW1.s
         GNU C17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 13.2.1 20230801, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -561,15 +561,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: eb0b45108af02c02a078961940bce3e9
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c606b.dir/'
-         as -v --64 -o CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o /tmp/ccBIYLb2.s
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_80fa5.dir/'
+         as -v --64 -o CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o /tmp/ccoy0LW1.s
         GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.'
-        Linking C executable cmTC_c606b
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c606b.dir/link.txt --verbose=1
-        /usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o -o cmTC_c606b  -v 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.'
+        Linking C executable cmTC_80fa5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80fa5.dir/link.txt --verbose=1
+        /usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o -o cmTC_80fa5  -v 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper
@@ -581,10 +581,10 @@ events:
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
         Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/libgomp.spec
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_c606b' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_c606b.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVhbfX2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c606b /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_c606b' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_c606b.'
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ'
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_80fa5' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_80fa5.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbvJyau.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_80fa5 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_80fa5' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_80fa5.'
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d'
         
       exitCode: 0
   -
@@ -596,13 +596,13 @@ events:
     message: |
       Parsed C OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ']
+        ignore line: [Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c606b/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_c606b.dir/build.make CMakeFiles/cmTC_c606b.dir/build]
-        ignore line: [make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ']
-        ignore line: [Building C object CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o]
-        ignore line: [/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ/OpenMPTryFlag.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_80fa5/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_80fa5.dir/build.make CMakeFiles/cmTC_80fa5.dir/build]
+        ignore line: [make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d']
+        ignore line: [Building C object CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o]
+        ignore line: [/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d/OpenMPTryFlag.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -610,8 +610,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.2.1 20230801 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c606b.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v -D_REENTRANT /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-T7VtLZ/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_c606b.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccBIYLb2.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_80fa5.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v -D_REENTRANT /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-SXkW5d/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_80fa5.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccoy0LW1.s]
         ignore line: [GNU C17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.2.1 20230801  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -625,15 +625,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: eb0b45108af02c02a078961940bce3e9]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c606b.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o /tmp/ccBIYLb2.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_80fa5.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o /tmp/ccoy0LW1.s]
         ignore line: [GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.']
-        ignore line: [Linking C executable cmTC_c606b]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c606b.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o -o cmTC_c606b  -v ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.']
+        ignore line: [Linking C executable cmTC_80fa5]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80fa5.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o -o cmTC_80fa5  -v ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper]
@@ -645,13 +645,13 @@ events:
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
         ignore line: [Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/libgomp.spec]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_c606b' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_c606b.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVhbfX2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c606b /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_80fa5' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_80fa5.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbvJyau.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_80fa5 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccVhbfX2.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccbvJyau.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -667,13 +667,13 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_c606b] ==> ignore
+          arg [cmTC_80fa5] ==> ignore
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib]
           arg [-L/lib/../lib] ==> dir [/lib/../lib]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..]
-          arg [CMakeFiles/cmTC_c606b.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_80fa5.dir/OpenMPTryFlag.c.o] ==> ignore
           arg [-lgomp] ==> lib [gomp]
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
@@ -706,8 +706,8 @@ events:
       - "CMakeLists.txt:19 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -717,13 +717,13 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4defd/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_4defd.dir/build.make CMakeFiles/cmTC_4defd.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0'
-        Building CXX object CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o
-        /usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0/OpenMPTryFlag.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_53e35/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_53e35.dir/build.make CMakeFiles/cmTC_53e35.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q'
+        Building CXX object CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q/OpenMPTryFlag.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -731,8 +731,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.2.1 20230801 (GCC) 
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4defd.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_4defd.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccggRnJk.s
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_53e35.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_53e35.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccmtzcUA.s
         GNU C++17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 13.2.1 20230801, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -749,15 +749,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: f089b864c6bcbc2427e9850aa6414a11
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4defd.dir/'
-         as -v --64 -o CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o /tmp/ccggRnJk.s
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_53e35.dir/'
+         as -v --64 -o CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o /tmp/ccmtzcUA.s
         GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.'
-        Linking CXX executable cmTC_4defd
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4defd.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o -o cmTC_4defd  -v 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_53e35
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53e35.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o -o cmTC_53e35  -v 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper
@@ -769,10 +769,10 @@ events:
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
         Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/libgomp.spec
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_4defd' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_4defd.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZyTBrY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4defd /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_4defd' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_4defd.'
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0'
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_53e35' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_53e35.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEQJgEz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_53e35 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_53e35' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_53e35.'
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q'
         
       exitCode: 0
   -
@@ -784,13 +784,13 @@ events:
     message: |
       Parsed CXX OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0']
+        ignore line: [Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4defd/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_4defd.dir/build.make CMakeFiles/cmTC_4defd.dir/build]
-        ignore line: [make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0']
-        ignore line: [Building CXX object CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o]
-        ignore line: [/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0/OpenMPTryFlag.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_53e35/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_53e35.dir/build.make CMakeFiles/cmTC_53e35.dir/build]
+        ignore line: [make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q']
+        ignore line: [Building CXX object CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q/OpenMPTryFlag.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -798,8 +798,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.2.1 20230801 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4defd.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-linkx0/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_4defd.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccggRnJk.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_53e35.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-gRdR3Q/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_53e35.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccmtzcUA.s]
         ignore line: [GNU C++17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.2.1 20230801  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -816,15 +816,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f089b864c6bcbc2427e9850aa6414a11]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4defd.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o /tmp/ccggRnJk.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_53e35.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o /tmp/ccmtzcUA.s]
         ignore line: [GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.']
-        ignore line: [Linking CXX executable cmTC_4defd]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4defd.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o -o cmTC_4defd  -v ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_53e35]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53e35.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o -o cmTC_53e35  -v ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper]
@@ -836,13 +836,13 @@ events:
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
         ignore line: [Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/libgomp.spec]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_4defd' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_4defd.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZyTBrY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4defd /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_53e35' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_53e35.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEQJgEz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_53e35 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccZyTBrY.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccEQJgEz.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -858,13 +858,13 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_4defd] ==> ignore
+          arg [cmTC_53e35] ==> ignore
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib]
           arg [-L/lib/../lib] ==> dir [/lib/../lib]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..]
-          arg [CMakeFiles/cmTC_4defd.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_53e35.dir/OpenMPTryFlag.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgomp] ==> lib [gomp]
@@ -893,8 +893,8 @@ events:
       - "CMakeLists.txt:19 (find_package)"
     description: "Detecting C OpenMP version"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebJdyd"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebJdyd"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-HO0Fa6"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-HO0Fa6"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -904,17 +904,17 @@ events:
       variable: "OpenMP_SPECTEST_C_"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebJdyd'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-HO0Fa6'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fdbf5/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_fdbf5.dir/build.make CMakeFiles/cmTC_fdbf5.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebJdyd'
-        Building C object CMakeFiles/cmTC_fdbf5.dir/OpenMPCheckVersion.c.o
-        /usr/bin/cc   -fopenmp -o CMakeFiles/cmTC_fdbf5.dir/OpenMPCheckVersion.c.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebJdyd/OpenMPCheckVersion.c
-        Linking C executable cmTC_fdbf5
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdbf5.dir/link.txt --verbose=1
-        /usr/bin/cc  -fopenmp CMakeFiles/cmTC_fdbf5.dir/OpenMPCheckVersion.c.o -o cmTC_fdbf5 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebJdyd'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_748a1/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_748a1.dir/build.make CMakeFiles/cmTC_748a1.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-HO0Fa6'
+        Building C object CMakeFiles/cmTC_748a1.dir/OpenMPCheckVersion.c.o
+        /usr/bin/cc   -fopenmp -o CMakeFiles/cmTC_748a1.dir/OpenMPCheckVersion.c.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-HO0Fa6/OpenMPCheckVersion.c
+        Linking C executable cmTC_748a1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_748a1.dir/link.txt --verbose=1
+        /usr/bin/cc  -fopenmp CMakeFiles/cmTC_748a1.dir/OpenMPCheckVersion.c.o -o cmTC_748a1 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-HO0Fa6'
         
       exitCode: 0
   -
@@ -925,8 +925,8 @@ events:
       - "CMakeLists.txt:19 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-f13R3M"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-f13R3M"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-DZbAOK"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-DZbAOK"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -936,17 +936,17 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-f13R3M'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-DZbAOK'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1e07/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_f1e07.dir/build.make CMakeFiles/cmTC_f1e07.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-f13R3M'
-        Building CXX object CMakeFiles/cmTC_f1e07.dir/OpenMPCheckVersion.cpp.o
-        /usr/bin/c++   -fopenmp -o CMakeFiles/cmTC_f1e07.dir/OpenMPCheckVersion.cpp.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-f13R3M/OpenMPCheckVersion.cpp
-        Linking CXX executable cmTC_f1e07
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1e07.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp CMakeFiles/cmTC_f1e07.dir/OpenMPCheckVersion.cpp.o -o cmTC_f1e07 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-f13R3M'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_10c53/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_10c53.dir/build.make CMakeFiles/cmTC_10c53.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-DZbAOK'
+        Building CXX object CMakeFiles/cmTC_10c53.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/c++   -fopenmp -o CMakeFiles/cmTC_10c53.dir/OpenMPCheckVersion.cpp.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-DZbAOK/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_10c53
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10c53.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp CMakeFiles/cmTC_10c53.dir/OpenMPCheckVersion.cpp.o -o cmTC_10c53 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-DZbAOK'
         
       exitCode: 0
   -
@@ -956,55 +956,55 @@ events:
       - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
       - "CMakeLists.txt:91 (check_ipo_supported)"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
     buildResult:
       variable: "_IPO_LANGUAGE_CHECK_RESULT"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
         
         Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
-        /usr/bin/cmake -S/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
-        /usr/bin/cmake -E cmake_progress_start /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/cmake -S/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
         /usr/bin/make  -f CMakeFiles/Makefile2 all
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
         /usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
-        make[2]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
-        cd /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
-        Dependee "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
-        Dependee "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        make[2]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
         Scanning dependencies of target foo
-        make[2]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        make[2]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
         /usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
-        make[2]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        make[2]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
         [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
-        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
         [ 50%] Linking CXX static library libfoo.a
         /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
         /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
         "/usr/bin/gcc-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
         "/usr/bin/gcc-ranlib" libfoo.a
-        make[2]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        make[2]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
         [ 50%] Built target foo
         /usr/bin/make  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
-        make[2]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
-        cd /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
-        Dependee "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
-        Dependee "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        make[2]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        Dependee "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
         Scanning dependencies of target boo
-        make[2]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        make[2]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
         /usr/bin/make  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
-        make[2]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        make[2]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
         [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
-        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
         [100%] Linking CXX executable boo
         /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
         /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
-        make[2]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        make[2]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
         [100%] Built target boo
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
-        /usr/bin/cmake -E cmake_progress_start /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
         
       exitCode: 0
   -
@@ -1014,55 +1014,55 @@ events:
       - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
       - "CMakeLists.txt:91 (check_ipo_supported)"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin"
     buildResult:
       variable: "_IPO_LANGUAGE_CHECK_RESULT"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
         
         Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
-        /usr/bin/cmake -S/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src -B/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
-        /usr/bin/cmake -E cmake_progress_start /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/cmake -S/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src -B/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
         /usr/bin/make  -f CMakeFiles/Makefile2 all
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
         /usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
-        make[2]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
-        cd /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
-        Dependee "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
-        Dependee "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
+        make[2]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
         Scanning dependencies of target foo
-        make[2]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        make[2]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
         /usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
-        make[2]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        make[2]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
         [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
-        /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.c.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.c.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
         [ 50%] Linking C static library libfoo.a
         /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
         /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
         "/usr/bin/gcc-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
         "/usr/bin/gcc-ranlib" libfoo.a
-        make[2]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        make[2]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
         [ 50%] Built target foo
         /usr/bin/make  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
-        make[2]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
-        cd /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
-        Dependee "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
-        Dependee "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
+        make[2]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        Dependee "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
         Scanning dependencies of target boo
-        make[2]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        make[2]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
         /usr/bin/make  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
-        make[2]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        make[2]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
         [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
-        /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.c.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.c.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/src/main.c
         [100%] Linking C executable boo
         /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
         /usr/bin/cc -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
-        make[2]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        make[2]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
         [100%] Built target boo
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
-        /usr/bin/cmake -E cmake_progress_start /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
         
       exitCode: 0
   -
@@ -1074,8 +1074,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_GNU_INLINE_ASM"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kacalU"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kacalU"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-QaS0dc"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-QaS0dc"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1085,17 +1085,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_GNU_INLINE_ASM"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kacalU'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-QaS0dc'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c63a1/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_c63a1.dir/build.make CMakeFiles/cmTC_c63a1.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kacalU'
-        Building CXX object CMakeFiles/cmTC_c63a1.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_GNU_INLINE_ASM  -fopenmp  -o CMakeFiles/cmTC_c63a1.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kacalU/src.cxx
-        Linking CXX executable cmTC_c63a1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c63a1.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_c63a1.dir/src.cxx.o -o cmTC_c63a1 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kacalU'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2c1c9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_2c1c9.dir/build.make CMakeFiles/cmTC_2c1c9.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-QaS0dc'
+        Building CXX object CMakeFiles/cmTC_2c1c9.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_GNU_INLINE_ASM  -fopenmp  -o CMakeFiles/cmTC_2c1c9.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-QaS0dc/src.cxx
+        Linking CXX executable cmTC_2c1c9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c1c9.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_2c1c9.dir/src.cxx.o -o cmTC_2c1c9 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-QaS0dc'
         
       exitCode: 0
   -
@@ -1108,8 +1108,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_AVX"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ti0J99"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ti0J99"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-XAwwkW"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-XAwwkW"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1119,17 +1119,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_AVX"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ti0J99'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-XAwwkW'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a386a/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_a386a.dir/build.make CMakeFiles/cmTC_a386a.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ti0J99'
-        Building CXX object CMakeFiles/cmTC_a386a.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX  -fopenmp    -mavx -o CMakeFiles/cmTC_a386a.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ti0J99/src.cxx
-        Linking CXX executable cmTC_a386a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a386a.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_a386a.dir/src.cxx.o -o cmTC_a386a 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ti0J99'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ca876/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ca876.dir/build.make CMakeFiles/cmTC_ca876.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-XAwwkW'
+        Building CXX object CMakeFiles/cmTC_ca876.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX  -fopenmp    -mavx -o CMakeFiles/cmTC_ca876.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-XAwwkW/src.cxx
+        Linking CXX executable cmTC_ca876
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca876.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_ca876.dir/src.cxx.o -o cmTC_ca876 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-XAwwkW'
         
       exitCode: 0
   -
@@ -1141,8 +1141,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_FMA"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ezjQzS"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ezjQzS"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-bsJwtO"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-bsJwtO"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1152,17 +1152,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_FMA"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ezjQzS'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-bsJwtO'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2d4b9/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_2d4b9.dir/build.make CMakeFiles/cmTC_2d4b9.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ezjQzS'
-        Building CXX object CMakeFiles/cmTC_2d4b9.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_FMA  -fopenmp -mfma -mf16c -o CMakeFiles/cmTC_2d4b9.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ezjQzS/src.cxx
-        Linking CXX executable cmTC_2d4b9
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d4b9.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_2d4b9.dir/src.cxx.o -o cmTC_2d4b9 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ezjQzS'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_40baa/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_40baa.dir/build.make CMakeFiles/cmTC_40baa.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-bsJwtO'
+        Building CXX object CMakeFiles/cmTC_40baa.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_FMA  -fopenmp -mfma -mf16c -o CMakeFiles/cmTC_40baa.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-bsJwtO/src.cxx
+        Linking CXX executable cmTC_40baa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40baa.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_40baa.dir/src.cxx.o -o cmTC_40baa 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-bsJwtO'
         
       exitCode: 0
   -
@@ -1175,8 +1175,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_XOP"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-y2dQrM"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-y2dQrM"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-nuHMY3"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-nuHMY3"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1186,17 +1186,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_XOP"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-y2dQrM'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-nuHMY3'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_34bbe/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_34bbe.dir/build.make CMakeFiles/cmTC_34bbe.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-y2dQrM'
-        Building CXX object CMakeFiles/cmTC_34bbe.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_XOP  -fopenmp -mfma -mf16c   -mxop -o CMakeFiles/cmTC_34bbe.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-y2dQrM/src.cxx
-        Linking CXX executable cmTC_34bbe
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34bbe.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_34bbe.dir/src.cxx.o -o cmTC_34bbe 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-y2dQrM'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f7bee/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f7bee.dir/build.make CMakeFiles/cmTC_f7bee.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-nuHMY3'
+        Building CXX object CMakeFiles/cmTC_f7bee.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_XOP  -fopenmp -mfma -mf16c   -mxop -o CMakeFiles/cmTC_f7bee.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-nuHMY3/src.cxx
+        Linking CXX executable cmTC_f7bee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7bee.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_f7bee.dir/src.cxx.o -o cmTC_f7bee 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-nuHMY3'
         
       exitCode: 0
   -
@@ -1209,8 +1209,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_F16C"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-e89UG8"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-e89UG8"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-AuIbqt"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-AuIbqt"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1220,17 +1220,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_F16C"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-e89UG8'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-AuIbqt'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a52e9/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_a52e9.dir/build.make CMakeFiles/cmTC_a52e9.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-e89UG8'
-        Building CXX object CMakeFiles/cmTC_a52e9.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_F16C  -fopenmp -mfma -mf16c   -mf16c -o CMakeFiles/cmTC_a52e9.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-e89UG8/src.cxx
-        Linking CXX executable cmTC_a52e9
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a52e9.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_a52e9.dir/src.cxx.o -o cmTC_a52e9 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-e89UG8'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2e38e/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_2e38e.dir/build.make CMakeFiles/cmTC_2e38e.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-AuIbqt'
+        Building CXX object CMakeFiles/cmTC_2e38e.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_F16C  -fopenmp -mfma -mf16c   -mf16c -o CMakeFiles/cmTC_2e38e.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-AuIbqt/src.cxx
+        Linking CXX executable cmTC_2e38e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e38e.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_2e38e.dir/src.cxx.o -o cmTC_2e38e 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-AuIbqt'
         
       exitCode: 0
   -
@@ -1243,8 +1243,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_AVX2"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lhr0Lh"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lhr0Lh"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-MhUMwE"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-MhUMwE"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1254,17 +1254,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_AVX2"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lhr0Lh'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-MhUMwE'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_02b15/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_02b15.dir/build.make CMakeFiles/cmTC_02b15.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lhr0Lh'
-        Building CXX object CMakeFiles/cmTC_02b15.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX2  -fopenmp -mfma -mf16c   -mfma -mf16c -mavx2 -o CMakeFiles/cmTC_02b15.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lhr0Lh/src.cxx
-        Linking CXX executable cmTC_02b15
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02b15.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_02b15.dir/src.cxx.o -o cmTC_02b15 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-lhr0Lh'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_32a0a/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_32a0a.dir/build.make CMakeFiles/cmTC_32a0a.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-MhUMwE'
+        Building CXX object CMakeFiles/cmTC_32a0a.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX2  -fopenmp -mfma -mf16c   -mfma -mf16c -mavx2 -o CMakeFiles/cmTC_32a0a.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-MhUMwE/src.cxx
+        Linking CXX executable cmTC_32a0a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32a0a.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_32a0a.dir/src.cxx.o -o cmTC_32a0a 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-MhUMwE'
         
       exitCode: 0
   -
@@ -1277,8 +1277,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_AVX512"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-LKrj2z"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-LKrj2z"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-vUrPF3"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-vUrPF3"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1288,17 +1288,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_AVX512"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-LKrj2z'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-vUrPF3'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9aeb5/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_9aeb5.dir/build.make CMakeFiles/cmTC_9aeb5.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-LKrj2z'
-        Building CXX object CMakeFiles/cmTC_9aeb5.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX512  -fopenmp -mfma -mf16c   -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -o CMakeFiles/cmTC_9aeb5.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-LKrj2z/src.cxx
-        Linking CXX executable cmTC_9aeb5
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9aeb5.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_9aeb5.dir/src.cxx.o -o cmTC_9aeb5 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-LKrj2z'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4125c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_4125c.dir/build.make CMakeFiles/cmTC_4125c.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-vUrPF3'
+        Building CXX object CMakeFiles/cmTC_4125c.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX512  -fopenmp -mfma -mf16c   -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -o CMakeFiles/cmTC_4125c.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-vUrPF3/src.cxx
+        Linking CXX executable cmTC_4125c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4125c.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -mfma -mf16c CMakeFiles/cmTC_4125c.dir/src.cxx.o -o cmTC_4125c 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-vUrPF3'
         
       exitCode: 0
   -
@@ -1310,8 +1310,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_AVX_VNNI"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-jdRFta"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-jdRFta"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TDDBBd"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TDDBBd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1321,17 +1321,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_AVX_VNNI"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-jdRFta'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TDDBBd'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a2d88/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_a2d88.dir/build.make CMakeFiles/cmTC_a2d88.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-jdRFta'
-        Building CXX object CMakeFiles/cmTC_a2d88.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX_VNNI  -fopenmp -mfma -mf16c -mavx2 -mavxvnni -o CMakeFiles/cmTC_a2d88.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-jdRFta/src.cxx
-        Linking CXX executable cmTC_a2d88
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2d88.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -mfma -mf16c -mavx2 -mavxvnni CMakeFiles/cmTC_a2d88.dir/src.cxx.o -o cmTC_a2d88 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-jdRFta'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b7266/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b7266.dir/build.make CMakeFiles/cmTC_b7266.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TDDBBd'
+        Building CXX object CMakeFiles/cmTC_b7266.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX_VNNI  -fopenmp -mfma -mf16c -mavx2 -mavxvnni -o CMakeFiles/cmTC_b7266.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TDDBBd/src.cxx
+        Linking CXX executable cmTC_b7266
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7266.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -mfma -mf16c -mavx2 -mavxvnni CMakeFiles/cmTC_b7266.dir/src.cxx.o -o cmTC_b7266 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-TDDBBd'
         
       exitCode: 0
   -
@@ -1343,8 +1343,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_AVX512_VNNI"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kuv8OE"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kuv8OE"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-YUl0Qi"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-YUl0Qi"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1354,17 +1354,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_AVX512_VNNI"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kuv8OE'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-YUl0Qi'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_94499/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_94499.dir/build.make CMakeFiles/cmTC_94499.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kuv8OE'
-        Building CXX object CMakeFiles/cmTC_94499.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX512_VNNI  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512vnni -o CMakeFiles/cmTC_94499.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kuv8OE/src.cxx
-        Linking CXX executable cmTC_94499
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94499.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512vnni CMakeFiles/cmTC_94499.dir/src.cxx.o -o cmTC_94499 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-kuv8OE'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_16d93/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_16d93.dir/build.make CMakeFiles/cmTC_16d93.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-YUl0Qi'
+        Building CXX object CMakeFiles/cmTC_16d93.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX512_VNNI  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512vnni -o CMakeFiles/cmTC_16d93.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-YUl0Qi/src.cxx
+        Linking CXX executable cmTC_16d93
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16d93.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512vnni CMakeFiles/cmTC_16d93.dir/src.cxx.o -o cmTC_16d93 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-YUl0Qi'
         
       exitCode: 0
   -
@@ -1376,8 +1376,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_AVX512_BF16"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-muNil9"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-muNil9"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-rmvCV7"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-rmvCV7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1387,17 +1387,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_AVX512_BF16"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-muNil9'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-rmvCV7'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1d30d/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_1d30d.dir/build.make CMakeFiles/cmTC_1d30d.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-muNil9'
-        Building CXX object CMakeFiles/cmTC_1d30d.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX512_BF16  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512bf16 -o CMakeFiles/cmTC_1d30d.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-muNil9/src.cxx
-        Linking CXX executable cmTC_1d30d
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d30d.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512bf16 CMakeFiles/cmTC_1d30d.dir/src.cxx.o -o cmTC_1d30d 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-muNil9'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_74112/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_74112.dir/build.make CMakeFiles/cmTC_74112.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-rmvCV7'
+        Building CXX object CMakeFiles/cmTC_74112.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX512_BF16  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512bf16 -o CMakeFiles/cmTC_74112.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-rmvCV7/src.cxx
+        Linking CXX executable cmTC_74112
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74112.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512bf16 CMakeFiles/cmTC_74112.dir/src.cxx.o -o cmTC_74112 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-rmvCV7'
         
       exitCode: 0
   -
@@ -1409,8 +1409,8 @@ events:
     checks:
       - "Performing Test NCNN_COMPILER_SUPPORT_X86_AVX512_FP16"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-H3pBIL"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-H3pBIL"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-R7FpbD"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-R7FpbD"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1420,17 +1420,17 @@ events:
       variable: "NCNN_COMPILER_SUPPORT_X86_AVX512_FP16"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-H3pBIL'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-R7FpbD'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_209f9/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_209f9.dir/build.make CMakeFiles/cmTC_209f9.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-H3pBIL'
-        Building CXX object CMakeFiles/cmTC_209f9.dir/src.cxx.o
-        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX512_FP16  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512fp16 -o CMakeFiles/cmTC_209f9.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-H3pBIL/src.cxx
-        Linking CXX executable cmTC_209f9
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_209f9.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512fp16 CMakeFiles/cmTC_209f9.dir/src.cxx.o -o cmTC_209f9 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-H3pBIL'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d1112/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_d1112.dir/build.make CMakeFiles/cmTC_d1112.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-R7FpbD'
+        Building CXX object CMakeFiles/cmTC_d1112.dir/src.cxx.o
+        /usr/bin/c++ -DNCNN_COMPILER_SUPPORT_X86_AVX512_FP16  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512fp16 -o CMakeFiles/cmTC_d1112.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-R7FpbD/src.cxx
+        Linking CXX executable cmTC_d1112
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1112.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512fp16 CMakeFiles/cmTC_d1112.dir/src.cxx.o -o cmTC_d1112 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-R7FpbD'
         
       exitCode: 0
   -
@@ -1445,8 +1445,8 @@ events:
     checks:
       - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebDPjz"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebDPjz"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-zZElaY"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-zZElaY"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1456,17 +1456,17 @@ events:
       variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebDPjz'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-zZElaY'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3d8e6/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_3d8e6.dir/build.make CMakeFiles/cmTC_3d8e6.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebDPjz'
-        Building CXX object CMakeFiles/cmTC_3d8e6.dir/src.cxx.o
-        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -fopenmp  -std=gnu++11   -fvisibility=hidden -o CMakeFiles/cmTC_3d8e6.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebDPjz/src.cxx
-        Linking CXX executable cmTC_3d8e6
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d8e6.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_3d8e6.dir/src.cxx.o -o cmTC_3d8e6 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ebDPjz'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6e43c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_6e43c.dir/build.make CMakeFiles/cmTC_6e43c.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-zZElaY'
+        Building CXX object CMakeFiles/cmTC_6e43c.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -fopenmp  -std=gnu++11   -fvisibility=hidden -o CMakeFiles/cmTC_6e43c.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-zZElaY/src.cxx
+        Linking CXX executable cmTC_6e43c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e43c.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_6e43c.dir/src.cxx.o -o cmTC_6e43c 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-zZElaY'
         
       exitCode: 0
   -
@@ -1481,8 +1481,8 @@ events:
     checks:
       - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-xt9fHj"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-xt9fHj"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-2q05dv"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-2q05dv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1492,17 +1492,17 @@ events:
       variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-xt9fHj'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-2q05dv'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1213/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_f1213.dir/build.make CMakeFiles/cmTC_f1213.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-xt9fHj'
-        Building CXX object CMakeFiles/cmTC_f1213.dir/src.cxx.o
-        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fopenmp  -std=gnu++11   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_f1213.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-xt9fHj/src.cxx
-        Linking CXX executable cmTC_f1213
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1213.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_f1213.dir/src.cxx.o -o cmTC_f1213 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-xt9fHj'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e16cd/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e16cd.dir/build.make CMakeFiles/cmTC_e16cd.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-2q05dv'
+        Building CXX object CMakeFiles/cmTC_e16cd.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fopenmp  -std=gnu++11   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_e16cd.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-2q05dv/src.cxx
+        Linking CXX executable cmTC_e16cd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e16cd.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_e16cd.dir/src.cxx.o -o cmTC_e16cd 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-2q05dv'
         
       exitCode: 0
   -
@@ -1517,8 +1517,8 @@ events:
     checks:
       - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
     directories:
-      source: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ZkPnKs"
-      binary: "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ZkPnKs"
+      source: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-mj1hwA"
+      binary: "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-mj1hwA"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fopenmp"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1528,24 +1528,24 @@ events:
       variable: "COMPILER_HAS_DEPRECATED_ATTR"
       cached: true
       stdout: |
-        Change Dir: '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ZkPnKs'
+        Change Dir: '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-mj1hwA'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dff3a/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_dff3a.dir/build.make CMakeFiles/cmTC_dff3a.dir/build
-        make[1]: Entering directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ZkPnKs'
-        Building CXX object CMakeFiles/cmTC_dff3a.dir/src.cxx.o
-        /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -fopenmp  -std=gnu++11 -o CMakeFiles/cmTC_dff3a.dir/src.cxx.o -c /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ZkPnKs/src.cxx
-        /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ZkPnKs/src.cxx: In function ‘int main()’:
-        /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ZkPnKs/src.cxx:2:33: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c680f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c680f.dir/build.make CMakeFiles/cmTC_c680f.dir/build
+        make[1]: Entering directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-mj1hwA'
+        Building CXX object CMakeFiles/cmTC_c680f.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -fopenmp  -std=gnu++11 -o CMakeFiles/cmTC_c680f.dir/src.cxx.o -c /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-mj1hwA/src.cxx
+        /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-mj1hwA/src.cxx: In function ‘int main()’:
+        /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-mj1hwA/src.cxx:2:33: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
             2 |     int main() { return somefunc();}
               |                         ~~~~~~~~^~
-        /home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ZkPnKs/src.cxx:1:37: note: declared here
+        /home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-mj1hwA/src.cxx:1:37: note: declared here
             1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
               |                                     ^~~~~~~~
-        Linking CXX executable cmTC_dff3a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dff3a.dir/link.txt --verbose=1
-        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_dff3a.dir/src.cxx.o -o cmTC_dff3a 
-        make[1]: Leaving directory '/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-ZkPnKs'
+        Linking CXX executable cmTC_c680f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c680f.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp  CMakeFiles/cmTC_c680f.dir/src.cxx.o -o cmTC_c680f 
+        make[1]: Leaving directory '/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/CMakeScratch/TryCompile-mj1hwA'
         
       exitCode: 0
 ...

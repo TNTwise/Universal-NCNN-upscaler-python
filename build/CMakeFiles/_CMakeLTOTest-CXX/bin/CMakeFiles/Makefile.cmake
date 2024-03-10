@@ -7,9 +7,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
-  "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/pax/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src/CMakeLists.txt"
+  "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
+  "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/3.28.3/CMakeSystem.cmake"
+  "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/build/CMakeFiles/_CMakeLTOTest-CXX/src/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake/Modules/CMakeGenericSystem.cmake"

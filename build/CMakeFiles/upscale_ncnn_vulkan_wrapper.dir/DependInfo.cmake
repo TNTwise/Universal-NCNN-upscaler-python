@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pax/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/upscale.cpp" "CMakeFiles/upscale_ncnn_vulkan_wrapper.dir/upscale-ncnn-vulkan/src/upscale.cpp.o" "gcc" "CMakeFiles/upscale_ncnn_vulkan_wrapper.dir/upscale-ncnn-vulkan/src/upscale.cpp.o.d"
-  "/home/pax/Universal-NCNN-upscaler-python/src/upscale_wrapped.cpp" "CMakeFiles/upscale_ncnn_vulkan_wrapper.dir/upscale_wrapped.cpp.o" "gcc" "CMakeFiles/upscale_ncnn_vulkan_wrapper.dir/upscale_wrapped.cpp.o.d"
+  "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale-ncnn-vulkan/src/upscale.cpp" "CMakeFiles/upscale_ncnn_vulkan_wrapper.dir/upscale-ncnn-vulkan/src/upscale.cpp.o" "gcc" "CMakeFiles/upscale_ncnn_vulkan_wrapper.dir/upscale-ncnn-vulkan/src/upscale.cpp.o.d"
+  "/home/pax/REAL-Video-Enhancer/Universal-NCNN-upscaler-python/src/upscale_wrapped.cpp" "CMakeFiles/upscale_ncnn_vulkan_wrapper.dir/upscale_wrapped.cpp.o" "gcc" "CMakeFiles/upscale_ncnn_vulkan_wrapper.dir/upscale_wrapped.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
