@@ -1,2 +1,0 @@
-"/usr/bin/gcc-ar" cr libglslang.a CMakeFiles/glslang.dir/CInterface/glslang_c_interface.cpp.o
-"/usr/bin/gcc-ranlib" libglslang.a

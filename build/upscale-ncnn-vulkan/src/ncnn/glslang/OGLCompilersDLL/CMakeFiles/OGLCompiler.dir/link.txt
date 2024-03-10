@@ -1,2 +1,0 @@
-"/usr/bin/gcc-ar" cr libOGLCompiler.a CMakeFiles/OGLCompiler.dir/InitializeDll.cpp.o
-"/usr/bin/gcc-ranlib" libOGLCompiler.a
