@@ -153,7 +153,7 @@ if(NOT USE_SYSTEM_NCNN)
   option(NCNN_BUILD_EXAMPLES "" OFF)
   option(NCNN_DISABLE_RTTI "" OFF)
   option(NCNN_DISABLE_EXCEPTION "" OFF)
-  option(NCNN_SIMPLEVK "" ON)
+  option(NCNN_SIMPLEVK "" OFF)
 
   option(WITH_LAYER_absval "" ON)
     option(WITH_LAYER_argmax "" ON)
