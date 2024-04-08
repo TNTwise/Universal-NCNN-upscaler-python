@@ -61,7 +61,7 @@ upscale = UPSCALE(gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, mod
 2: {"param": "spanx4_ch48.param", "bin": "spanx4_ch48.bin", "scale": 4, "folder": "models/SPAN"},
 3: {"param": "spanx4_ch52.param", "bin": "spanx4_ch52.bin", "scale": 4, "folder": "models/SPAN"},
 #custom span
-4: {"param": "2xHFA2kSPAN_27k.param", "bin": "2xHFA2kSPAN_27k.bin", "scale": 2, "folder": "models/SPAN"},
+4: {"param": "2x_ModernSpanimationV1.param", "bin": "2x_ModernSpanimationV1.bin", "scale": 2, "folder": "models/SPAN"},
 5: {"param": "4xSPANkendata.param", "bin": "4xSPANkendata.bin", "scale": 4, "folder": "models/SPAN"},
 6: {"param": "ClearReality4x.param", "bin": "ClearReality4x.bin", "scale": 4, "folder": "models/SPAN"},
 
