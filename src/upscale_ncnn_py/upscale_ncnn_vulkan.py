@@ -13,7 +13,7 @@ except ImportError:
 
 
 class UPSCALE:
-    def __init__(self, gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0 ,num_threads: int = 1, model_str: str = ""):
+    def __init__(self, gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0 ,num_threads: int = 1, model_str: str = "", scale: int = 0):
         assert gpuid >= -1, "gpuid must >= -1"
         assert tilesize == 0 or tilesize >= 32, "tilesize must >= 32 or be 0"
         assert model >= -1, "model must > 0 or -1"
@@ -24,10 +24,10 @@ class UPSCALE:
 
         self._tilesize = tilesize
         self._model = model
-        self._scale = 2
+        self._scale = scale
 
         if self._model > -1:
-            self._load()
+            self._load(scale=scale)
 
         self.raw_in_image = None
         self.raw_out_image = None
