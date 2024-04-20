@@ -1,12 +1,12 @@
 from realesrgan_ncnn_py import Realesrgan
-from upscale_ncnn_py import UPSCALE
 from realcugan_ncnn_py import Realcugan
+from upscale_ncnn_py import UPSCALE
 from PIL import Image
-#13
-upscale1 = UPSCALE(gpuid=0,model=21,num_threads=2)
-
-with Image.open("Pasted image.png") as image:
-    
+#13 
+upscale1 = UPSCALE(gpuid=0,num_threads=2,model_str="/home/pax/.local/share/REAL-Video-Enhancer/models/realesrgan/models/realesr-animevideov3-x2") #<- shufflecugan
+#upscale1 = UPSCALE(model=1)
+with Image.open("input.png") as image:
+    for i in range(100):
         image = upscale1.process_pil(image)
 
-image.save("output1.png", quality=95)
+image.save("output.png", quality=95)

@@ -13,13 +13,13 @@ except ImportError:
 
 
 class UPSCALE:
-    def __init__(self, gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0 ,num_threads: int = 1):
+    def __init__(self, gpuid: int = 0, tta_mode: bool = False, tilesize: int = 0, model: int = 0 ,num_threads: int = 1, model_str: str = ""):
         assert gpuid >= -1, "gpuid must >= -1"
         assert tilesize == 0 or tilesize >= 32, "tilesize must >= 32 or be 0"
         assert model >= -1, "model must > 0 or -1"
         assert num_threads >= 1, "num_threads must be a positive integer"
         self._gpuid = gpuid
-
+        self._model_str = model_str
         self._upscale_object = wrapped.UPSCALEWrapped(gpuid, tta_mode, num_threads)
 
         self._tilesize = tilesize
@@ -93,11 +93,18 @@ class UPSCALE:
             if scale == 0:
                 raise ValueError("scale must be specified when model == -1")
         else:
-            model_dir = pathlib.Path(__file__).parent / model_dict[self._model].get("folder", "models")
+            if self._model_str == "":
+                model_dir = pathlib.Path(__file__).parent / model_dict[self._model].get("folder", "models")
 
-            param_path = model_dir / pathlib.Path(str(model_dict[self._model]["param"]))
-            model_path = model_dir / pathlib.Path(str(model_dict[self._model]["bin"]))
-
+                param_path = model_dir / pathlib.Path(str(model_dict[self._model]["param"]))
+                model_path = model_dir / pathlib.Path(str(model_dict[self._model]["bin"]))
+            else:
+                model_dir = pathlib.Path(self._model_str).parent
+                
+                param_path = model_dir / pathlib.Path(str(self._model_str.split("/")[-1]+".param"))
+                model_path = model_dir / pathlib.Path(str(self._model_str.split("/")[-1]+".bin"))
+                
+                # print (model_dir,param_path,model_path)
         self._scale = scale if scale != 0 else int(model_dict[self._model]["scale"])
         self._set_parameters()
 
