@@ -171,9 +171,9 @@ jobs:
         run: |
           echo F | xcopy .\src\build\Release\upscale_ncnn_vulkan_wrapper.*.pyd .\src\upscale_ncnn_py
 
-      - name: build python 3.9 wheel
-        if: matrix.python-version == '3.9'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp39" --config-setting="--plat-name=win_amd64"
+      - name: build python 3.8 wheel
+        if: matrix.python-version == '3.8'
+        run: pdm build --no-sdist --config-setting="--python-tag=cp38" --config-setting="--plat-name=win_amd64"
 
       - name: build python 3.10 wheel
         if: matrix.python-version == '3.10'
@@ -248,9 +248,9 @@ jobs:
         run: |
           cp src/build/upscale_ncnn_vulkan_wrapper.*.so src/upscale_ncnn_py
 
-      - name: build python 3.9 wheel
-        if: matrix.python-version == '3.9'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp39" --config-setting="--plat-name=manylinux1_x86_64"
+      - name: build python 3.8 wheel
+        if: matrix.python-version == '3.8'
+        run: pdm build --no-sdist --config-setting="--python-tag=cp38" --config-setting="--plat-name=manylinux1_x86_64"
 
       - name: build python 3.10 wheel
         if: matrix.python-version == '3.10'
