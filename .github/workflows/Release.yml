@@ -206,8 +206,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libvulkan-dev glslang-dev glslang-tools libomp5
-          cd /usr/lib/x86_64-linux-gnu/
-          sudo cp libomp.so libomp.so.5
+          #cd /usr/lib/x86_64-linux-gnu/
+          #sudo cp libomp.so libomp.so.5
       - uses: pdm-project/setup-pdm@v3
         name: Setup PDM
         with:
