@@ -223,15 +223,9 @@ jobs:
         run: |
           python --version
 
-      - name: cache-vulkansdk
-        id: cache-vulkansdk
-        uses: actions/cache@v3.2.4
-        with:
-          path: "1.2.162.1"
-          key: vulkansdk-linux-x86_64-1.2.162.1
+      
 
       - name: vulkansdk
-        if: steps.cache-vulkansdk.outputs.cache-hit != 'true'
         run: |
           wget https://github.com/Tohrusky/realcugan-ncnn-vulkan-build-macOS/releases/download/v0.0.1/vulkansdk-linux-x86_64-1.2.162.1.tar.gz -O vulkansdk-linux-x86_64-1.2.162.1.tar.gz
           tar -xf vulkansdk-linux-x86_64-1.2.162.1.tar.gz
