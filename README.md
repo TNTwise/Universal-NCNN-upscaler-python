@@ -36,13 +36,6 @@ To use this package, simply install it via pip:
 pip install upscale-ncnn-py
 ```
 
-For Linux user:
-
-```sh
-apt install -y libomp5 libvulkan-dev
-cd /usr/lib
-sudo ln -s libomp.so libomp.so.5
-```
 
 Then, import the upscale class from the package:
 
