@@ -142,7 +142,6 @@ class UPSCALE:
         )
 
     def process_cv2(self, _image: np.ndarray) -> np.ndarray:
-        _image = cv2.cvtColor(_image, cv2.COLOR_BGR2RGB)
 
         in_bytes = _image.tobytes()
         channels = int(len(in_bytes) / (_image.shape[1] * _image.shape[0]))
@@ -159,11 +158,11 @@ class UPSCALE:
 
         self.process()
 
-        res = np.frombuffer(self.raw_out_image.get_data(), dtype=np.uint8).reshape(
+        
+
+        return np.frombuffer(self.raw_out_image.get_data(), dtype=np.uint8).reshape(
             self._scale * _image.shape[0], self._scale * _image.shape[1], channels
         )
-
-        return cv2.cvtColor(res, cv2.COLOR_RGB2BGR)
 
     def process_bytes(self, _image_bytes: bytes, width: int, height: int, channels: int) -> bytes:
         if self.raw_in_image is None and self.raw_out_image is None:
