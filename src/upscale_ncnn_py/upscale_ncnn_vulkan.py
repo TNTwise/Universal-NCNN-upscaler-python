@@ -32,6 +32,10 @@ class UPSCALE:
         self.raw_in_image = None
         self.raw_out_image = None
 
+        self.channels = None
+        self.out_bytes = None
+        
+        
     def _set_parameters(self) -> None:
         self._upscale_object.set_parameters(self._tilesize, self._scale)
 
@@ -144,16 +148,17 @@ class UPSCALE:
     def process_cv2(self, _image: np.ndarray) -> np.ndarray:
 
         in_bytes = _image.tobytes()
-        channels = int(len(in_bytes) / (_image.shape[1] * _image.shape[0]))
-        out_bytes = (self._scale**2) * len(in_bytes) * b"\x00"
+        if self.channels == None:
+            self.channels = int(len(in_bytes) / (_image.shape[1] * _image.shape[0]))
+            self.out_bytes = (self._scale**2) * len(in_bytes) * b"\x00"
 
-        self.raw_in_image = wrapped.UPSCALEImage(in_bytes, _image.shape[1], _image.shape[0], channels)
+        self.raw_in_image = wrapped.UPSCALEImage(in_bytes, _image.shape[1], _image.shape[0], self.channels)
 
         self.raw_out_image = wrapped.UPSCALEImage(
-            out_bytes,
+            self.out_bytes,
             self._scale * _image.shape[1],
             self._scale * _image.shape[0],
-            channels,
+            self.channels,
         )
 
         self.process()
