@@ -2,6 +2,7 @@ import pathlib
 from typing import Dict, Optional, Union
 
 import cv2
+import torch
 import numpy as np
 from PIL import Image
 from sympy import Q
@@ -166,7 +167,7 @@ class UPSCALE:
         
 
         return np.frombuffer(self.raw_out_image.get_data(), dtype=np.uint8).reshape(
-            self._scale * _image.shape[0], self._scale * _image.shape[1], channels
+            self._scale * _image.shape[0], self._scale * _image.shape[1], self.channels
         )
 
     def process_bytes(self, _image_bytes: bytes, width: int, height: int, channels: int) -> bytes:
@@ -185,3 +186,24 @@ class UPSCALE:
         self.process()
 
         return self.raw_out_image.get_data()
+    
+    def process_torch(self, image: torch.Tensor) -> torch.Tensor:
+        # MAYBE IT WORKS
+        in_bytes = image.numpy().tobytes()
+        if self.channels == None:
+            self.channels = int(len(in_bytes) / (image.shape[1] * image.shape[0]))
+            self.out_bytes = (self._scale**2) * len(in_bytes) * b"\x00"
+        
+        self.raw_in_image = wrapped.UPSCALEImage(in_bytes, image.shape[1], image.shape[0], self.channels)
+
+        self.raw_out_image = wrapped.UPSCALEImage(
+            self.out_bytes,
+            self._scale * image.shape[1],
+            self._scale * image.shape[0],
+            self.channels,
+        )
+
+        return torch.frombuffer(self.process_bytes(in_bytes, image.shape[1], image.shape[0], self.channels), dtype=torch.uint8).reshape(
+            self._scale * image.shape[0], self._scale * image.shape[1], self.channels
+        )
+    
