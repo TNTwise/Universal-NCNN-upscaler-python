@@ -166,7 +166,7 @@ class UPSCALE:
         
 
         return np.frombuffer(self.raw_out_image.get_data(), dtype=np.uint8).reshape(
-            self._scale * _image.shape[0], self._scale * _image.shape[1], channels
+            self._scale * _image.shape[0], self._scale * _image.shape[1], self.channels
         )
 
     def process_bytes(self, _image_bytes: bytes, width: int, height: int, channels: int) -> bytes:
