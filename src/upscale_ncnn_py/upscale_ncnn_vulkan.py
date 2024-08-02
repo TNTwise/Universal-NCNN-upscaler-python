@@ -2,7 +2,11 @@ import pathlib
 from typing import Dict, Optional, Union
 
 import cv2
-import torch
+try:
+    import torch
+except ImportError:
+    pass
+
 import numpy as np
 from PIL import Image
 from sympy import Q
