@@ -191,7 +191,7 @@ class UPSCALE:
 
         return self.raw_out_image.get_data()
     
-    def process_torch(self, image: torch.Tensor) -> torch.Tensor:
+    def process_torch(self, image):
         # MAYBE IT WORKS
         in_bytes = image.numpy().tobytes()
         if self.channels == None:
