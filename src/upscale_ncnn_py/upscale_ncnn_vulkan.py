@@ -4,7 +4,7 @@ from typing import Dict, Optional, Union
 import cv2
 try:
     import torch
-except ImportError:
+except:
     pass
 
 import numpy as np
@@ -13,7 +13,7 @@ from sympy import Q
 
 try:
     from . import upscale_ncnn_vulkan_wrapper as wrapped
-except ImportError:
+except:
     import upscale_ncnn_vulkan_wrapper as wrapped
 
 
