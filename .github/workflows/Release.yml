@@ -20,7 +20,7 @@ jobs:
   macos:
     strategy:
       matrix:
-        python-version: ["3.8", "3.11", "3.12"]
+        python-version: ["3.8", "3.11", "3.12", "3.13"]
 
     runs-on: macos-12
     steps:
@@ -121,7 +121,7 @@ jobs:
   windows:
     strategy:
       matrix:
-        python-version: ["3.8", "3.11", "3.12"]
+        python-version: ["3.8", "3.11", "3.12", "3.13"]
 
     runs-on: windows-latest
     steps:
@@ -195,7 +195,7 @@ jobs:
   linux:
     strategy:
       matrix:
-        python-version: ["3.8","3.10", "3.11", "3.12"]
+        python-version: ["3.8", "3.11", "3.12", "3.13"]
 
     runs-on: ubuntu-20.04
     steps:
