@@ -270,7 +270,7 @@ jobs:
           path: dist
 
   Release:
-    needs: [setup, macos, windows, linux]
+    needs: [setup, windows, linux]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v3
