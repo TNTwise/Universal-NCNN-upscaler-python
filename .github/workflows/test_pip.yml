@@ -1,9 +1,4 @@
-name: test_pip
-
-on:
-  schedule:
-    - cron: "0 19 * 1 *"
-  workflow_dispatch:
+name: test-pip
 
 env:
   GITHUB_ACTIONS: true
