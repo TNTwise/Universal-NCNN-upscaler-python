@@ -82,29 +82,7 @@ jobs:
               ..
           cmake --build . -j 4
           
-      - name: build python 3.9 wheel
-        if: matrix.python-version == '3.9'
-        run: |
-          lipo -create src/build-arm64/upscale_ncnn_vulkan_wrapper.cpython-39-darwin.so src/build-x86_64/upscale_ncnn_vulkan_wrapper.cpython-39-darwin.so -o src/upscale_ncnn_py/upscale_ncnn_vulkan_wrapper.cpython-39-darwin.so
-          pdm build --no-sdist --config-setting="--python-tag=cp39" --config-setting="--plat-name=macosx_11_0_universal2"
-
-      - name: build python 3.10 wheel
-        if: matrix.python-version == '3.10'
-        run: |
-          lipo -create src/build-arm64/upscale_ncnn_vulkan_wrapper.cpython-310-darwin.so src/build-x86_64/upscale_ncnn_vulkan_wrapper.cpython-310-darwin.so -o src/upscale_ncnn_py/upscale_ncnn_vulkan_wrapper.cpython-310-darwin.so
-          pdm build --no-sdist --config-setting="--python-tag=cp310" --config-setting="--plat-name=macosx_11_0_universal2"
-
-      - name: build python 3.11 wheel
-        if: matrix.python-version == '3.11'
-        run: |
-          lipo -create src/build-arm64/upscale_ncnn_vulkan_wrapper.cpython-311-darwin.so src/build-x86_64/upscale_ncnn_vulkan_wrapper.cpython-311-darwin.so -o src/upscale_ncnn_py/upscale_ncnn_vulkan_wrapper.cpython-311-darwin.so
-          pdm build --no-sdist --config-setting="--python-tag=cp311" --config-setting="--plat-name=macosx_11_0_universal2"
-
-      - name: build python 3.12 wheel
-        if: matrix.python-version == '3.12'
-        run: |
-          lipo -create src/build-arm64/upscale_ncnn_vulkan_wrapper.cpython-312-darwin.so src/build-x86_64/upscale_ncnn_vulkan_wrapper.cpython-312-darwin.so -o src/upscale_ncnn_py/upscale_ncnn_vulkan_wrapper.cpython-312-darwin.so
-          pdm build --no-sdist --config-setting="--python-tag=cp312" --config-setting="--plat-name=macosx_11_0_universal2"
+   
       - name: build python 3.13 wheel
         if: matrix.python-version == '3.13'
         run: |
@@ -113,7 +91,7 @@ jobs:
     
 
       - name: upload
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: dist
 
@@ -163,24 +141,12 @@ jobs:
         run: |
           echo F | xcopy .\src\build\Release\upscale_ncnn_vulkan_wrapper.*.pyd .\src\upscale_ncnn_py
 
-      - name: build python 3.10 wheel
-        if: matrix.python-version == '3.10'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp310" --config-setting="--plat-name=win_amd64"
-
-      - name: build python 3.11 wheel
-        if: matrix.python-version == '3.11'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp311" --config-setting="--plat-name=win_amd64"
-
-      - name: build python 3.12 wheel
-        if: matrix.python-version == '3.12'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp312" --config-setting="--plat-name=win_amd64"
-        
       - name: build python 3.13 wheel
         if: matrix.python-version == '3.13'
         run: pdm build --no-sdist --config-setting="--python-tag=cp313" --config-setting="--plat-name=win_amd64"
 
       - name: upload
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: dist
 
@@ -234,24 +200,12 @@ jobs:
           cp src/build/upscale_ncnn_vulkan_wrapper.*.so src/upscale_ncnn_py
 
 
-      - name: build python 3.10 wheel
-        if: matrix.python-version == '3.10'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp310" --config-setting="--plat-name=manylinux1_x86_64"
-
-      - name: build python 3.11 wheel
-        if: matrix.python-version == '3.11'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp311" --config-setting="--plat-name=manylinux1_x86_64"
-
-      - name: build python 3.12 wheel
-        if: matrix.python-version == '3.12'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp312" --config-setting="--plat-name=manylinux1_x86_64"
-        
       - name: build python 3.13 wheel
         if: matrix.python-version == '3.13'
         run: pdm build --no-sdist --config-setting="--python-tag=cp313" --config-setting="--plat-name=manylinux1_x86_64"
 
       - name: upload
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: dist
 
