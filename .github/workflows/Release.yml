@@ -47,15 +47,8 @@ jobs:
         run: |
           python --version
 
-      - name: cache-vulkansdk
-        id: cache-vulkansdk
-        uses: actions/cache@v3.2.4
-        with:
-          path: "src/vulkansdk-macos-1.2.162.1"
-          key: vulkansdk-macos-1.2.162.1
 
       - name: vulkansdk
-        if: steps.cache-vulkansdk.outputs.cache-hit != 'true'
         run: |
           cd src
           wget https://github.com/Tohrusky/realcugan-ncnn-vulkan-build-macOS/releases/download/v0.0.1/vulkansdk-macos-1.2.162.1.dmg -O vulkansdk-macos-1.2.162.1.dmg
@@ -150,15 +143,8 @@ jobs:
         run: |
           python --version
 
-      - name: cache-vulkansdk
-        id: cache-vulkansdk
-        uses: actions/cache@v3
-        with:
-          path: "VulkanSDK"
-          key: VulkanSDK-1.2.162.1-Installer
 
       - name: vulkansdk
-        if: steps.cache-vulkansdk.outputs.cache-hit != 'true'
         run: |
           Invoke-WebRequest -Uri https://github.com/Tohrusky/realcugan-ncnn-vulkan-build-macOS/releases/download/v0.0.1/VulkanSDK-1.2.162.1-Installer.exe -OutFile VulkanSDK-1.2.162.1-Installer.exe
           7z x -aoa ./VulkanSDK-1.2.162.1-Installer.exe -oVulkanSDK
