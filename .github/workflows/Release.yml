@@ -215,7 +215,7 @@ jobs:
   linux_arm64:
     strategy:
       matrix:
-        python-version: ["3.12"]
+        python-version: ["3.13"]
 
     runs-on: ubuntu-22.04-arm
     steps:
@@ -254,8 +254,8 @@ jobs:
           cp src/build/upscale_ncnn_vulkan_wrapper.*.so src/upscale_ncnn_py
 
 
-      - name: build python 3.12 wheel
-        if: matrix.python-version == '3.12'
+      - name: build python 3.13 wheel
+        if: matrix.python-version == '3.13'
         run: pdm build --no-sdist --config-setting="--python-tag=cp313" --config-setting="--plat-name=manylinux2014_aarch64"
 
       - name: upload
