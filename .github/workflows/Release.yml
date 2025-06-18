@@ -152,6 +152,59 @@ jobs:
           path: dist
           name: windows-${{ matrix.python-version }}
 
+  windows-arm:
+    strategy:
+      matrix:
+        python-version: ["3.13"]
+
+    runs-on: windows-11-arm
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - uses: pdm-project/setup-pdm@v3
+        name: Setup PDM
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: arm64
+          version: 2.11.1
+          prerelease: false
+          enable-pep582: false
+          allow-python-prereleases: false
+          update-python: true
+
+      - name: Check Python version
+        run: |
+          python --version
+
+
+      - name: vulkansdk
+        run: |
+          winget install --id=KhronosGroup.VulkanSDK --disable-interactivity --accept-source-agreements
+
+      - name: Build
+        run: |
+          $env:CMAKE_FLAGS="-DPY_VERSION=${{ matrix.python-version }}"
+          cd src
+          mkdir build && cd build
+          cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_CXX_FLAGS="-frtti -fexceptions" ..
+          cmake --build . --config Release -j 4
+
+      - name: pre build wheel
+        run: |
+          echo F | xcopy .\src\build\Release\upscale_ncnn_vulkan_wrapper.*.pyd .\src\upscale_ncnn_py
+
+      - name: build python 3.13 wheel
+        if: matrix.python-version == '3.13'
+        run: pdm build --no-sdist --config-setting="--python-tag=cp313" --config-setting="--plat-name=win_amd64"
+
+      - name: upload
+        uses: actions/upload-artifact@v4
+        with:
+          path: dist
+          name: windows-${{ matrix.python-version }}
+  
   linux:
     strategy:
       matrix:
