@@ -211,9 +211,60 @@ jobs:
         with:
           path: dist
           name: linux-${{ matrix.python-version }}
+  linux_arm64:
+    strategy:
+      matrix:
+        python-version: ["3.12"]
 
+    runs-on: ubuntu-22.04-arm
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libvulkan-dev glslang-dev glslang-tools libomp5
+      - uses: pdm-project/setup-pdm@v3
+        name: Setup PDM
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: arm64
+          version: 2.11.1
+          prerelease: false
+          enable-pep582: false
+          allow-python-prereleases: false
+          update-python: true
+
+      - name: Check Python version
+        run: |
+          python --version
+
+      - name: build
+        
+        run: |
+          cd src
+          mkdir build && cd build
+          cmake ../
+          cmake --build . -j 4
+
+      - name: pre build wheel
+        run: |
+          cp src/build/upscale_ncnn_vulkan_wrapper.*.so src/upscale_ncnn_py
+
+
+      - name: build python 3.12 wheel
+        if: matrix.python-version == '3.12'
+        run: pdm build --no-sdist --config-setting="--python-tag=cp313" --config-setting="--plat-name=manylinux2014_aarch64"
+
+      - name: upload
+        uses: actions/upload-artifact@v4
+        with:
+          path: dist
+          name: linux_arm64-${{ matrix.python-version }}
+          
   Release:
-    needs: [setup, windows, linux]
+    needs: [setup, windows, linux, linux_arm64]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v3
