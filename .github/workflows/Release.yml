@@ -247,7 +247,7 @@ jobs:
           cd src
           mkdir build && cd build
           cmake ../
-          cmake --build . -j 4 -A arm64
+          cmake --build . -j 4 
 
       - name: pre build wheel
         run: |
