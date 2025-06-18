@@ -177,7 +177,9 @@ jobs:
       - name: Check Python version
         run: |
           python --version
-
+          
+      - name: Install winget
+        uses: Cyberboss/install-winget@v1
 
       - name: vulkansdk
         run: |
