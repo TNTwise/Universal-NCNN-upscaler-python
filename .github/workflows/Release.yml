@@ -178,12 +178,12 @@ jobs:
         run: |
           python --version
           
-      - name: Install winget
-        uses: Cyberboss/install-winget@v1
-
-      - name: vulkansdk
-        run: |
-          winget install --id=KhronosGroup.VulkanSDK --disable-interactivity --accept-source-agreements
+      - name: Prepare Vulkan SDK
+        uses: humbletim/setup-vulkan-sdk@v1.2.1
+        with:
+         vulkan-query-version: 1.4.304.1
+         vulkan-components: Vulkan-Headers, Vulkan-Loader
+         vulkan-use-cache: true
 
       - name: Build
         run: |
