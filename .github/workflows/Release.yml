@@ -30,16 +30,8 @@ jobs:
         with:
           submodules: recursive
 
-      - uses: pdm-project/setup-pdm@v3
-        name: Setup PDM
-        with:
-          python-version: ${{ matrix.python-version }}
-          architecture: arm64
-          version: 2.11.1
-          prerelease: false
-          enable-pep582: false
-          allow-python-prereleases: false
-          update-python: true
+      
+      
 
       - name: Check Python version
         run: |
@@ -58,7 +50,17 @@ jobs:
           mkdir build && cd build
           cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_CXX_FLAGS="-frtti -fexceptions" ..
           cmake --build . --config Release -j 4
-
+      
+      - uses: pdm-project/setup-pdm@v3
+        name: Setup PDM
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: arm64
+          version: 2.11.1
+          prerelease: false
+          enable-pep582: false
+          allow-python-prereleases: false
+          update-python: true
       - name: pre build wheel
         run: |
           echo F | xcopy .\src\build\Release\upscale_ncnn_vulkan_wrapper.*.pyd .\src\upscale_ncnn_py
