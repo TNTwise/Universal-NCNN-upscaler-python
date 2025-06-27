@@ -154,11 +154,9 @@ if(NOT USE_SYSTEM_NCNN)
   option(NCNN_DISABLE_RTTI "" OFF)
   option(NCNN_DISABLE_EXCEPTION "" OFF)
   # Enable NCNN_SIMPLEVK only on Windows ARM
-  if(WIN32 AND (CMAKE_SYSTEM_PROCESSOR STREQUAL "ARM64" OR CMAKE_SYSTEM_PROCESSOR STREQUAL "ARM"))
-    option(NCNN_SIMPLEVK "" ON)
-  else()
-    option(NCNN_SIMPLEVK "" OFF)
-  endif()
+  option(NCNN_SIMPLEVK "" ON)
+  
+
   
   option(WITH_LAYER_absval "" ON)
     option(WITH_LAYER_argmax "" ON)
