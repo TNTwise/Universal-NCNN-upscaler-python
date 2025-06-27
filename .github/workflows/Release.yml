@@ -44,16 +44,6 @@ jobs:
         run: |
           python --version
           
-      - name: Build
-        run: |
-          $env:CMAKE_FLAGS="-DPY_VERSION=${{ matrix.python-version }}"
-          cd src
-          mkdir build && cd build
-          cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_CXX_FLAGS="-frtti -fexceptions" ..
-          cmake --build . --config Release -j 4
-        env:
-          VULKAN_SDK: C:\VulkanSDK\1.3.290.0
-      
       - uses: pdm-project/setup-pdm@v3
         name: Setup PDM
         with:
@@ -64,6 +54,18 @@ jobs:
           enable-pep582: false
           allow-python-prereleases: false
           update-python: true
+          
+      - name: Build
+        run: |
+          $env:CMAKE_FLAGS="-DPY_VERSION=${{ matrix.python-version }}"
+          cd src
+          mkdir build && cd build
+          cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_CXX_FLAGS="-frtti -fexceptions" ..
+          cmake --build . --config Release -j 4
+        env:
+          VULKAN_SDK: C:\VulkanSDK\1.3.290.0
+      
+      
       - name: pre build wheel
         run: |
           echo F | xcopy .\src\build\Release\upscale_ncnn_vulkan_wrapper.*.pyd .\src\upscale_ncnn_py
