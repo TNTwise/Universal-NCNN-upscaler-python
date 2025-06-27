@@ -30,6 +30,13 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Setup Vulkan SDK
+        shell: pwsh
+        run: |
+          $url = 'https://sdk.lunarg.com/sdk/download/1.3.290.0/warm/InstallVulkanARM64-1.3.290.0.exe'
+          $installerFile = 'InstallVulkanARM64-1.3.290.0.exe'
+          Invoke-WebRequest -Uri $url -OutFile $installerFile
+          Start-Process -FilePath $installerFile -ArgumentList '--accept-licenses', '--default-answer', '--confirm-command', 'install' -Wait
       
       
 
