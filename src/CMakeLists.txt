@@ -153,8 +153,7 @@ if(NOT USE_SYSTEM_NCNN)
   option(NCNN_BUILD_EXAMPLES "" OFF)
   option(NCNN_DISABLE_RTTI "" OFF)
   option(NCNN_DISABLE_EXCEPTION "" OFF)
-  # Enable NCNN_SIMPLEVK only on Windows ARM
-  option(NCNN_SIMPLEVK "" ON)
+  option(NCNN_SIMPLEVK "" OFF)
   
 
   
