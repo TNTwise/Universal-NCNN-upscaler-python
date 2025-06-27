@@ -47,16 +47,7 @@ jobs:
         run: |
           python --version
           
-      - uses: pdm-project/setup-pdm@v3
-        name: Setup PDM
-        with:
-          python-version: ${{ matrix.python-version }}
-          architecture: arm64
-          version: 2.11.1
-          prerelease: false
-          enable-pep582: false
-          allow-python-prereleases: false
-          update-python: true
+     
           
       - name: Build
         run: |

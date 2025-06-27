@@ -11,7 +11,9 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE release CACHE STRING "Choose the type of build" FORCE)
 endif()
 
-
+find_package(Python3 COMPONENTS Development REQUIRED)
+include_directories(${Python3_INCLUDE_DIRS})
+target_link_libraries(your_target_name PRIVATE ${Python3_LIBRARIES})
 
 option(USE_SYSTEM_NCNN "build with system libncnn" OFF)
 option(USE_SYSTEM_WEBP "build with system libwebp" OFF)
@@ -155,6 +157,7 @@ if(NOT USE_SYSTEM_NCNN)
   option(NCNN_BUILD_EXAMPLES "" OFF)
   option(NCNN_DISABLE_RTTI "" OFF)
   option(NCNN_DISABLE_EXCEPTION "" OFF)
+  # Enable NCNN_SIMPLEVK only on Windows ARM
   option(NCNN_SIMPLEVK "" ON)
   
 
