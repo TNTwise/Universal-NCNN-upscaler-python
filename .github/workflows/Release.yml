@@ -2,6 +2,9 @@ name: Release
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - windows-arm
 
 env:
   GITHUB_ACTIONS: true
