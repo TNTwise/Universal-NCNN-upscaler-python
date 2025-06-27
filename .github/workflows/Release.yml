@@ -38,10 +38,7 @@ jobs:
           Invoke-WebRequest -Uri $url -OutFile $installerFile
           Start-Process -FilePath $installerFile -ArgumentList '--accept-licenses', '--default-answer', '--confirm-command', 'install' -Wait
         
-      - uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-          architecture: x64
+      
 
       - name: Check Python version
         run: |
@@ -54,9 +51,13 @@ jobs:
           architecture: arm64
           version: 2.11.1
           prerelease: false
-          enable-pep582: true
           allow-python-prereleases: false
           update-python: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
           
       - name: Build
         run: |
