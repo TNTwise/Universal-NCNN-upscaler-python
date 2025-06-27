@@ -38,26 +38,22 @@ jobs:
           Invoke-WebRequest -Uri $url -OutFile $installerFile
           Start-Process -FilePath $installerFile -ArgumentList '--accept-licenses', '--default-answer', '--confirm-command', 'install' -Wait
         
-      
+        
 
       - name: Check Python version
         run: |
           python --version
           
-      - uses: pdm-project/setup-pdm@v4
+      - uses: pdm-project/setup-pdm@v3
         name: Setup PDM
         with:
           python-version: ${{ matrix.python-version }}
           architecture: arm64
           version: 2.11.1
           prerelease: false
+          enable-pep582: false
           allow-python-prereleases: false
           update-python: true
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-          architecture: x64
           
       - name: Build
         run: |
@@ -83,5 +79,3 @@ jobs:
         with:
           path: dist
           name: windows-${{ matrix.python-version }}
-
-
