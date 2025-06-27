@@ -38,7 +38,10 @@ jobs:
           Invoke-WebRequest -Uri $url -OutFile $installerFile
           Start-Process -FilePath $installerFile -ArgumentList '--accept-licenses', '--default-answer', '--confirm-command', 'install' -Wait
         
-        
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
 
       - name: Check Python version
         run: |
