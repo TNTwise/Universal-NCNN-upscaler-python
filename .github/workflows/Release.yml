@@ -54,6 +54,7 @@ jobs:
           architecture: arm64
           version: 2.11.1
           prerelease: false
+          enable-pep582: true
           allow-python-prereleases: false
           update-python: true
           
