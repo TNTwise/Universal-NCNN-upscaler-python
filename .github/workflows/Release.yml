@@ -27,7 +27,7 @@ jobs:
       matrix:
         python-version: ["3.13"]
 
-    runs-on: windows-11-arm
+    runs-on: windows-2025
     steps:
       - uses: actions/checkout@v3
         with:
@@ -36,11 +36,7 @@ jobs:
       - name: Setup Vulkan SDK
         shell: pwsh
         run: |
-          $url = 'https://sdk.lunarg.com/sdk/download/1.3.290.0/warm/InstallVulkanARM64-1.3.290.0.exe'
-          $installerFile = 'InstallVulkanARM64-1.3.290.0.exe'
-          Invoke-WebRequest -Uri $url -OutFile $installerFile
-          Start-Process -FilePath $installerFile -ArgumentList '--accept-licenses', '--default-answer', '--confirm-command', 'install' -Wait
-        
+          winget install vulkansdk
         
 
       - name: Check Python version
@@ -63,7 +59,7 @@ jobs:
           $env:CMAKE_FLAGS="-DPY_VERSION=${{ matrix.python-version }}"
           cd src
           mkdir build && cd build
-          cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_CXX_FLAGS="-frtti -fexceptions" ..
+          cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_CXX_FLAGS="-frtti -fexceptions" -A ARM64 ..
           cmake --build . --config Release -j 4
         env:
           VULKAN_SDK: C:\VulkanSDK\1.3.290.0
