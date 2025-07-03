@@ -21,8 +21,6 @@ find_package(Threads)
 find_package(OpenMP)
 find_package(Vulkan REQUIRED)
 find_package(Python3 REQUIRED COMPONENTS Interpreter Development)
-target_include_directories(your_target PRIVATE ${Python3_INCLUDE_DIRS})
-target_link_libraries(your_target PRIVATE ${Python3_LIBRARIES})
 
 find_program(GLSLANGVALIDATOR_EXECUTABLE NAMES glslangValidator PATHS $ENV{VULKAN_SDK}/bin NO_CMAKE_FIND_ROOT_PATH)
 message(STATUS "Found glslangValidator: ${GLSLANGVALIDATOR_EXECUTABLE}")
