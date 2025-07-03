@@ -61,7 +61,7 @@ jobs:
           $env:CMAKE_FLAGS="-DPY_VERSION=${{ matrix.python-version }}"
           cd src
           mkdir build && cd build
-          cmake -A x64 -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_CXX_FLAGS="-frtti -fexceptions" -A ARM64 ..
+          cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_CXX_FLAGS="-frtti -fexceptions" -A ARM64 ..
           cmake --build . --config Release -j 4
 
       - name: pre build wheel
