@@ -36,7 +36,7 @@ jobs:
       - name: Setup Vulkan SDK
         shell: pwsh
         run: |
-          winget install vulkansdk
+          winget install vulkansdk  --disable-interactivity --accept-source-agreements
         
 
       - name: Check Python version
