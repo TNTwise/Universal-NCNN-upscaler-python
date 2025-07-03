@@ -43,7 +43,7 @@ jobs:
         run: |
           python --version
           
-      - uses: pdm-project/setup-pdm@v3
+      - uses: pdm-project/setup-pdm@v4
         name: Setup PDM
         with:
           python-version: ${{ matrix.python-version }}
