@@ -58,7 +58,6 @@ jobs:
           
       - name: Build
         run: |
-          $env:VULKAN_SDK="$(pwd)\VulkanSDK"
           $env:CMAKE_FLAGS="-DPY_VERSION=${{ matrix.python-version }}"
           cd src
           mkdir build && cd build
