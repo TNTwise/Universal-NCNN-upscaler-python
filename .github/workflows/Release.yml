@@ -47,7 +47,7 @@ jobs:
         name: Setup PDM
         with:
           python-version: ${{ matrix.python-version }}
-          architecture: arm64
+          architecture: x64
           version: 2.11.1
           prerelease: false
           enable-pep582: false
