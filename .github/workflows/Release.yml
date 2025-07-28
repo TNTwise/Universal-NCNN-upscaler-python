@@ -49,7 +49,7 @@ jobs:
       - name: Setup Vulkan SDK
         shell: pwsh
         run: |
-          vcpkg install pybind11
+          vcpkg install pybind11 --allow-unsupported
           $url = 'https://sdk.lunarg.com/sdk/download/1.3.290.0/warm/InstallVulkanARM64-1.3.290.0.exe'
           $installerFile = 'InstallVulkanARM64-1.3.290.0.exe'
           Invoke-WebRequest -Uri $url -OutFile $installerFile
