@@ -6,6 +6,7 @@ cmake_policy(SET CMP0086 NEW)
 cmake_policy(SET CMP0091 NEW)
 set(CMAKE_POLICY_DEFAULT_CMP0091 NEW)
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+set(CMAKE_TOOLCHAIN_FILE "C:/vcpkg/scripts/buildsystems/vcpkg.cmake")
 
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE release CACHE STRING "Choose the type of build" FORCE)
@@ -277,7 +278,8 @@ upscale_add_shader(upscale_postproc_tta.comp)
 
 add_custom_target(generate-spirv DEPENDS ${SHADER_SPV_HEX_FILES})
 find_package(Python COMPONENTS Interpreter Development)
-find_package(pybind11 CONFIG)
+find_package(pybind11 CONFIG REQUIRED)
+
 pybind11_add_module(upscale_ncnn_vulkan_wrapper  upscale_wrapped.cpp upscale_wrapped.h upscale-ncnn-vulkan/src/upscale.h upscale-ncnn-vulkan/src/upscale.cpp)
 
 add_dependencies(upscale_ncnn_vulkan_wrapper generate-spirv)
