@@ -278,7 +278,7 @@ upscale_add_shader(upscale_postproc_tta.comp)
 
 add_custom_target(generate-spirv DEPENDS ${SHADER_SPV_HEX_FILES})
 find_package(Python COMPONENTS Interpreter Development)
-find_package(pybind11 CONFIG REQUIRED)
+find_package(pybind11 REQUIRED)
 
 pybind11_add_module(upscale_ncnn_vulkan_wrapper  upscale_wrapped.cpp upscale_wrapped.h upscale-ncnn-vulkan/src/upscale.h upscale-ncnn-vulkan/src/upscale.cpp)
 
