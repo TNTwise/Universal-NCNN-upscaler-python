@@ -99,7 +99,7 @@ jobs:
   windows:
     strategy:
       matrix:
-        python-version: ["3.13"]
+        python-version: ["3.12"]
 
     runs-on: windows-latest
     steps:
@@ -141,9 +141,9 @@ jobs:
         run: |
           echo F | xcopy .\src\build\Release\upscale_ncnn_vulkan_wrapper.*.pyd .\src\upscale_ncnn_py
 
-      - name: build python 3.13 wheel
-        if: matrix.python-version == '3.13'
-        run: pdm build --no-sdist --config-setting="--python-tag=cp313" --config-setting="--plat-name=win_amd64"
+      - name: build python 3.12 wheel
+        if: matrix.python-version == '3.12'
+        run: pdm build --no-sdist --config-setting="--python-tag=cp312" --config-setting="--plat-name=win_amd64"
 
       - name: upload
         uses: actions/upload-artifact@v4
