@@ -139,7 +139,7 @@ jobs:
 
       - name: pre build wheel
         run: |
-          echo F | xcopy .\src\build\Release\upscale_ncnn_vulkan_wrapper.*.pyd .\src\upscale_ncnn_py
+          echo F | xcopy .\src\build\Release\realesrgan_ncnn_vulkan_wrapper.*.pyd .\src\realesrgan_ncnn_py
 
       - name: build python 3.12 wheel
         if: matrix.python-version == '3.12'
